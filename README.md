@@ -10,5 +10,14 @@ Ensuite se placer dans le répertoire src et lancer la commande
 ## Environnement de développement
 Lancer la commande `npm run watch`
 
-##Environnement de production
+## Environnement de production
 Lancer la commande `npm run prod`
+
+## Commande git
+`git checkout develop`
+`git add .`
+`git commit -m ""`
+`git checkout master`
+`git merge develop`
+`git checkout develop`
+`git push origin --all`
