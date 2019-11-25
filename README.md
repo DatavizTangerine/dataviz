@@ -15,9 +15,15 @@ Lancer la commande `npm run prod`
 
 ## Commande git
 `git checkout develop`
+
 `git add .`
+
 `git commit -m ""`
+
 `git checkout master`
+
 `git merge develop`
+
 `git checkout develop`
+
 `git push origin --all`
