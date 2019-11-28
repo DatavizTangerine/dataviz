@@ -1,0 +1,29 @@
+$main-font: 'Norms';
+$main-font-light: 'Norms Light';
+$main-font-bold: 'Norms Bold';
+
+@font-face {
+  font-family: 'Norms';
+  src: url('../fonts/TTNorms-Regular.woff2') format('woff2'),
+  url('../fonts/TTNorms-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Norms Light';
+  src: url('../fonts/TTNorms-Light.woff2') format('woff2'),
+  url('../fonts/TTNorms-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Norms Bold';
+  src: url('../fonts/TTNorms-Bold.woff2') format('woff2'),
+  url('../fonts/TTNorms-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+

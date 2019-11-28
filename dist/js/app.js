@@ -86,14 +86,39 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./js/components/introduction.js":
+/*!***************************************!*\
+  !*** ./js/components/introduction.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar introduction = function introduction() {\n  var btn = document.querySelector('.introduction span');\n\n  if (btn) {\n    var sectionIntroduction = document.querySelector('.introduction');\n    var sectionOnboarding = document.querySelector('.onboarding');\n    btn.addEventListener('click', function () {\n      sectionIntroduction.classList.add('fadeOut');\n      sectionOnboarding.classList.add('fadeIn');\n    });\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (introduction);\n\n//# sourceURL=webpack:///./js/components/introduction.js?");
+
+/***/ }),
+
+/***/ "./js/components/onboarding.js":
+/*!*************************************!*\
+  !*** ./js/components/onboarding.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar onboarding = function onboarding() {\n  var btn = document.querySelector('.onboarding span');\n\n  if (btn) {\n    var sectionOnboarding = document.querySelector('.onboarding');\n    var sectionChoose = document.querySelector('.choose__sexe');\n    btn.addEventListener('click', function () {\n      sectionOnboarding.classList.add('fadeOut');\n      sectionOnboarding.classList.remove('fadeIn');\n      sectionChoose.classList.add('fadeIn');\n    });\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (onboarding);\n\n//# sourceURL=webpack:///./js/components/onboarding.js?");
+
+/***/ }),
+
 /***/ "./js/main.js":
 /*!********************!*\
   !*** ./js/main.js ***!
   \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {});\n\n//# sourceURL=webpack:///./js/main.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_introduction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/introduction */ \"./js/components/introduction.js\");\n/* harmony import */ var _components_onboarding__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/onboarding */ \"./js/components/onboarding.js\");\n\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  Object(_components_introduction__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  Object(_components_onboarding__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\n//# sourceURL=webpack:///./js/main.js?");
 
 /***/ }),
 

@@ -130,7 +130,7 @@ let config = {
         new BrowserSyncPlugin( {
                 host: 'localhost',
                 port: 3000,
-                proxy: 'http://localhost/webpack-test/'
+                proxy: 'http://localhost/dataviz/'
             },
             {
                 reload: true

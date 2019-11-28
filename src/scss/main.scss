@@ -1,5 +1,9 @@
-$body-color: #1a1a1a;
+@import './0-Bases/fonts.scss';
+@import './0-Bases/reset.scss';
+@import './0-Bases/colors.scss';
+@import './0-Bases/animations.scss';
 
-h1{
-  color: $body-color;
-}
+@import './1-Layouts/introduction.scss';
+@import './1-Layouts/onboarding.scss';
+@import './1-Layouts/chooseSexe.scss';
+
