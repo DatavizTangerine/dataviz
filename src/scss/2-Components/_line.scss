@@ -1,0 +1,32 @@
+.line{
+  height: 150px;
+  width: 1px;
+  background-color: $grey;
+  position: absolute;
+  left: calc(50% - 1px);
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $grey;
+    border-radius: 50%;
+    top: 0;
+    left: -4px;
+  }
+}
+.line-bottom{
+  bottom: 0;
+}
+.line-top{
+  top: 0;
+}
+
+.line__start{
+  height: 150px;
+  width: 1px;
+  background-color: $grey;
+  position: absolute;
+  left: calc(50% - 1px);
+}

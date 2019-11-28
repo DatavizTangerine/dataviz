@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./js/components/chooseSexe.js":
+/*!*************************************!*\
+  !*** ./js/components/chooseSexe.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar chooseSex = function chooseSex() {\n  var male = document.querySelector('.male');\n  var female = document.querySelector('.female');\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (chooseSex);\n\n//# sourceURL=webpack:///./js/components/chooseSexe.js?");
+
+/***/ }),
+
 /***/ "./js/components/introduction.js":
 /*!***************************************!*\
   !*** ./js/components/introduction.js ***!
@@ -118,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar onboarding = function onb
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_introduction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/introduction */ \"./js/components/introduction.js\");\n/* harmony import */ var _components_onboarding__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/onboarding */ \"./js/components/onboarding.js\");\n\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  Object(_components_introduction__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  Object(_components_onboarding__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_introduction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/introduction */ \"./js/components/introduction.js\");\n/* harmony import */ var _components_onboarding__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/onboarding */ \"./js/components/onboarding.js\");\n/* harmony import */ var _components_chooseSexe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/chooseSexe */ \"./js/components/chooseSexe.js\");\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  Object(_components_introduction__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  Object(_components_onboarding__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  Object(_components_chooseSexe__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\n\n//# sourceURL=webpack:///./js/main.js?");
 
 /***/ }),
 
@@ -140,7 +152,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! D:\\wamp64\\www\\dataviz\\src/js/main.js */\"./js/main.js\");\nmodule.exports = __webpack_require__(/*! D:\\wamp64\\www\\dataviz\\src/scss/main.scss */\"./scss/main.scss\");\n\n\n//# sourceURL=webpack:///multi_./js/main.js_./scss/main.scss?");
+eval("__webpack_require__(/*! J:\\wamp64\\www\\dataviz\\src/js/main.js */\"./js/main.js\");\nmodule.exports = __webpack_require__(/*! J:\\wamp64\\www\\dataviz\\src/scss/main.scss */\"./scss/main.scss\");\n\n\n//# sourceURL=webpack:///multi_./js/main.js_./scss/main.scss?");
 
 /***/ })
 
