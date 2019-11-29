@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar chooseSex = function chooseSex() {\n  var male = document.querySelector('.male');\n  var female = document.querySelector('.female');\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (chooseSex);\n\n//# sourceURL=webpack:///./js/components/chooseSexe.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar chooseSex = function chooseSex() {\n  var male = document.querySelector('.male');\n  var female = document.querySelector('.female');\n  var background = document.querySelector('.background');\n  male.addEventListener('mouseover', function () {\n    background.classList.add('blue');\n  });\n  male.addEventListener('mouseout', function () {\n    background.classList.remove('blue');\n  });\n  female.addEventListener('mouseover', function () {\n    background.classList.add('pink');\n  });\n  female.addEventListener('mouseout', function () {\n    background.classList.remove('pink');\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (chooseSex);\n\n//# sourceURL=webpack:///./js/components/chooseSexe.js?");
 
 /***/ }),
 
