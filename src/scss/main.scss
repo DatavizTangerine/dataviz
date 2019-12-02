@@ -9,4 +9,11 @@
 
 @import './2-Components/line.scss';
 @import './2-Components/menu.scss';
+@import './2-Components/timeline.scss';
+@import './2-Components/cursor.scss';
+
+body{
+  overflow: hidden;
+  cursor: none;
+}
 

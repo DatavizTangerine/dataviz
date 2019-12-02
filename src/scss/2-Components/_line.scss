@@ -4,6 +4,7 @@
   background-color: $grey;
   position: absolute;
   left: calc(50% - 1px);
+  z-index: 1;
 
   &:before{
     content: '';
@@ -20,7 +21,12 @@
   bottom: 0;
 }
 .line-top{
+  z-index: 1;
   top: 0;
+
+  &.hidden{
+    opacity: 0;
+  }
 }
 
 .line__start{

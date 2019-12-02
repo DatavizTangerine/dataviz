@@ -10,6 +10,16 @@
   transition: 1.2s all;
 }
 
+.slideOff{
+  transition: 1.2s all;
+  transform: translateX(-100vw) !important;
+}
+.slideOn{
+  transition: 1.2s all;
+  transform: translateX(0) !important;
+}
+
+
 .blue{
   transition: 0.7s all;
   background-color: #b3d4fc;
