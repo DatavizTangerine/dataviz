@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d0e7967-4451-494a-ab39-d97a7795f4ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webpack.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/introduction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/onboarding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/onboarding.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/0-Bases/_animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/0-Bases/_animations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/1-Layouts/_chooseSexe.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/1-Layouts/_chooseSexe.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/1-Layouts/_introduction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/1-Layouts/_introduction.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/1-Layouts/_onboarding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/1-Layouts/_onboarding.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/2-Components/_line.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/2-Components/_line.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,13 +41,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectId" id="1U5327MMxmIHE0mz13VSm6sKK2G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -46,19 +48,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\dataviz\src\img" />
-      <recent name="D:\wamp64\www\dataviz\src\fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp64\www\dataviz\src\scss" />
       <recent name="D:\Hugo\Documents\Année-gobelins\Ressource dev\webpack\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="J:\wamp64\www\dataviz\src\img" />
+      <recent name="D:\wamp64\www\dataviz\src\img" />
+      <recent name="D:\wamp64\www\dataviz\src\fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,6 +91,11 @@
       <workItem from="1574632420772" duration="461000" />
       <workItem from="1574712900871" duration="1454000" />
       <workItem from="1574873594621" duration="6581000" />
+      <workItem from="1574944678066" duration="2708000" />
+      <workItem from="1575029700170" duration="1845000" />
+      <workItem from="1575054939431" duration="20739000" />
+      <workItem from="1575205288781" duration="8175000" />
+      <workItem from="1575271178652" duration="1339000" />
     </task>
     <servers />
   </component>
@@ -102,6 +110,20 @@
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>

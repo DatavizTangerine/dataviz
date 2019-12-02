@@ -1,0 +1,33 @@
+.timeline{
+  height: 0.5px;
+  background-color: rgba(20,20,20,0.5);
+  width: 815px;
+  position: absolute;
+  bottom: 8.3%;
+  left: calc(50% - 407.5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s;
+  z-index: 1;
+  .timeline__item{
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: $grey;
+    border-radius: 50%;
+
+    &.is-active{
+      transition: all 0.8s;
+      border-radius: 100px;
+      height: 40px;
+    }
+  }
+  &.show{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.8s;
+  }
+}
