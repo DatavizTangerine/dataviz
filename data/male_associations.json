@@ -1,0 +1,92 @@
+{
+    "Taux d’adhésion":{
+        "Femmes":{
+            "Sport":15,
+            "Culture":10,
+            "Loisirs (comités des fêtes, clubs de bridge, etc.)":7,
+            "Club de 3e âge, de loisirs pour personnes âgées":4,
+            "Religion, culte, groupe paroissial":3,
+            "Action sanitaire et sociale ou humanitaire et caritative":7,
+            "Défense de droits et d’intérêts communs":4,
+            "Protection de l’environnement":1,
+            "Syndicat (hors groupement professionnel)":5,
+            "Groupement professionnel hors syndicat (professeurs, musiciens, etc.)":2,
+            "Parti politique":1,
+            "Ensemble":40
+        },
+        "Hommes":{
+            "Sport":20,
+            "Culture":8,
+            "Loisirs (comités des fêtes, clubs de bridge, etc.)":8,
+            "Club de 3e âge, de loisirs pour personnes âgées":3,
+            "Religion, culte, groupe paroissial":2,
+            "Action sanitaire et sociale ou humanitaire et caritative":5,
+            "Défense de droits et d’intérêts communs":3,
+            "Protection de l’environnement":2,
+            "Syndicat (hors groupement professionnel)":8,
+            "Groupement professionnel hors syndicat (professeurs, musiciens, etc.)":3,
+            "Parti politique":2,
+            "Ensemble":44
+        }
+    },
+    "Participation régulière":{
+        "Femmes":{
+            "Sport":86,
+            "Culture":74,
+            "Loisirs (comités des fêtes, clubs de bridge, etc.)":73,
+            "Club de 3e âge, de loisirs pour personnes âgées":67,
+            "Religion, culte, groupe paroissial":68,
+            "Action sanitaire et sociale ou humanitaire et caritative":52,
+            "Défense de droits et d’intérêts communs":58,
+            "Protection de l’environnement":38,
+            "Syndicat (hors groupement professionnel)":27,
+            "Groupement professionnel hors syndicat (professeurs, musiciens, etc.)":43,
+            "Parti politique":42,
+            "Ensemble":74
+        },
+        "Hommes":{
+            "Sport":79,
+            "Culture":72,
+            "Loisirs (comités des fêtes, clubs de bridge, etc.)":70,
+            "Club de 3e âge, de loisirs pour personnes âgées":62,
+            "Religion, culte, groupe paroissial":67,
+            "Action sanitaire et sociale ou humanitaire et caritative":53,
+            "Défense de droits et d’intérêts communs":55,
+            "Protection de l’environnement":42,
+            "Syndicat (hors groupement professionnel)":32,
+            "Groupement professionnel hors syndicat (professeurs, musiciens, etc.)":49,
+            "Parti politique":45,
+            "Ensemble":72
+        }
+    },
+    "Participation de temps en temps, tout au long de l’année":{
+        "Femmes":{
+            "Sport":8,
+            "Culture":15,
+            "Loisirs (comités des fêtes, clubs de bridge, etc.)":16,
+            "Club de 3e âge, de loisirs pour personnes âgées":18,
+            "Religion, culte, groupe paroissial":20,
+            "Action sanitaire et sociale ou humanitaire et caritative":14,
+            "Défense de droits et d’intérêts communs":18,
+            "Protection de l’environnement":22,
+            "Syndicat (hors groupement professionnel)":18,
+            "Groupement professionnel hors syndicat (professeurs, musiciens, etc.)":28,
+            "Parti politique":19,
+            "Ensemble":13
+        },
+        "Hommes":{
+            "Sport":13,
+            "Culture":16,
+            "Loisirs (comités des fêtes, clubs de bridge, etc.)":13,
+            "Club de 3e âge, de loisirs pour personnes âgées":17,
+            "Religion, culte, groupe paroissial":16,
+            "Action sanitaire et sociale ou humanitaire et caritative":11,
+            "Défense de droits et d’intérêts communs":17,
+            "Protection de l’environnement":13,
+            "Syndicat (hors groupement professionnel)":16,
+            "Groupement professionnel hors syndicat (professeurs, musiciens, etc.)":25,
+            "Parti politique":12,
+            "Ensemble":13
+        }
+    }
+}

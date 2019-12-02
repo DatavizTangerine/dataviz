@@ -1,0 +1,186 @@
+{
+    "16-19":{
+        "Non-surgical":{
+            "Pillule":54,
+            "Préservatif masculin":65,
+            "Retrait":3,
+            "Dispositif intra-utérin":"",
+            "Injection":4,
+            "Implant":3,
+            "Patch contraceptif":"",
+            "Période sans danger":3,
+            "Cape cervicale":"",
+            "Spermicide":4,
+            "Stérilet":2,
+            "Préservatif féminin":5,
+            "Pillule du lendemain":7
+        },
+        "Surgical":{
+            "Stérilisé":"",
+            "Partenaire stérilisé":""
+        },
+        "Unweighted base":40,
+        "Weighted base (000s)":700
+    },
+    "20-24":{
+        "Non-surgical":{
+            "Pillule":54,
+            "Préservatif masculin":50,
+            "Retrait":7,
+            "Dispositif intra-utérin":4,
+            "Injection":6,
+            "Implant":5,
+            "Patch contraceptif":0,
+            "Période sans danger":"",
+            "Cape cervicale":"",
+            "Spermicide":0,
+            "Stérilet":"",
+            "Préservatif féminin":2,
+            "Pillule du lendemain":1
+        },
+        "Surgical":{
+            "Stérilisé":3,
+            "Partenaire stérilisé":1
+        },
+        "Unweighted base":100,
+        "Weighted base (000s)":1545
+    },
+    "25-29":{
+        "Non-surgical":{
+            "Pillule":41,
+            "Préservatif masculin":42,
+            "Retrait":5,
+            "Dispositif intra-utérin":7,
+            "Injection":9,
+            "Implant":2,
+            "Patch contraceptif":2,
+            "Période sans danger":3,
+            "Cape cervicale":1,
+            "Spermicide":2,
+            "Stérilet":"",
+            "Préservatif féminin":1,
+            "Pillule du lendemain":1
+        },
+        "Surgical":{
+            "Stérilisé":2,
+            "Partenaire stérilisé":2
+        },
+        "Unweighted base":130,
+        "Weighted base (000s)":1370
+    },
+    "30-34":{
+        "Non-surgical":{
+            "Pillule":46,
+            "Préservatif masculin":32,
+            "Retrait":8,
+            "Dispositif intra-utérin":6,
+            "Injection":3,
+            "Implant":1,
+            "Patch contraceptif":1,
+            "Période sans danger":2,
+            "Cape cervicale":1,
+            "Spermicide":"",
+            "Stérilet":3,
+            "Préservatif féminin":"",
+            "Pillule du lendemain":1
+        },
+        "Surgical":{
+            "Stérilisé":2,
+            "Partenaire stérilisé":10
+        },
+        "Unweighted base":140,
+        "Weighted base (000s)":1471
+    },
+    "35-39":{
+        "Non-surgical":{
+            "Pillule":27,
+            "Préservatif masculin":24,
+            "Retrait":5,
+            "Dispositif intra-utérin":12,
+            "Injection":2,
+            "Implant":0,
+            "Patch contraceptif":1,
+            "Période sans danger":2,
+            "Cape cervicale":"",
+            "Spermicide":0,
+            "Stérilet":3,
+            "Préservatif féminin":1,
+            "Pillule du lendemain":0
+        },
+        "Surgical":{
+            "Stérilisé":10,
+            "Partenaire stérilisé":22
+        },
+        "Unweighted base":140,
+        "Weighted base (000s)":1350
+    },
+    "40-44":{
+        "Non-surgical":{
+            "Pillule":10,
+            "Préservatif masculin":21,
+            "Retrait":6,
+            "Dispositif intra-utérin":9,
+            "Injection":2,
+            "Implant":0,
+            "Patch contraceptif":1,
+            "Période sans danger":4,
+            "Cape cervicale":0,
+            "Spermicide":0,
+            "Stérilet":3,
+            "Préservatif féminin":2,
+            "Pillule du lendemain":0
+        },
+        "Surgical":{
+            "Stérilisé":18,
+            "Partenaire stérilisé":28
+        },
+        "Unweighted base":140,
+        "Weighted base (000s)":1625
+    },
+    "45-49":{
+        "Non-surgical":{
+            "Pillule":13,
+            "Préservatif masculin":11,
+            "Retrait":4,
+            "Dispositif intra-utérin":11,
+            "Injection":4,
+            "Implant":1,
+            "Patch contraceptif":"",
+            "Période sans danger":5,
+            "Cape cervicale":1,
+            "Spermicide":0,
+            "Stérilet":4,
+            "Préservatif féminin":"",
+            "Pillule du lendemain":""
+        },
+        "Surgical":{
+            "Stérilisé":19,
+            "Partenaire stérilisé":30
+        },
+        "Unweighted base":120,
+        "Weighted base (000s)":1358
+    },
+    "Moyenne":{
+        "Non-surgical":{
+            "Pillule":34,
+            "Préservatif masculin":33,
+            "Retrait":6,
+            "Dispositif intra-utérin":7,
+            "Injection":4,
+            "Implant":2,
+            "Patch contraceptif":1,
+            "Période sans danger":3,
+            "Cape cervicale":1,
+            "Spermicide":1,
+            "Stérilet":2,
+            "Préservatif féminin":1,
+            "Pillule du lendemain":1
+        },
+        "Surgical":{
+            "Stérilisé":8,
+            "Partenaire stérilisé":14
+        },
+        "Unweighted base":810,
+        "Weighted base (000s)":9419
+    }
+}

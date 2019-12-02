@@ -1,0 +1,46 @@
+{
+    "Moyenne":{
+        "Rubriques filles et garçons":"",
+        "% de pages non genrées":32.80
+    },
+    "Intermarché":{
+        "Rubriques filles et garçons":"Oui",
+        "% de pages non genrées":21.90
+    },
+    "Carrefour":{
+        "Rubriques filles et garçons":"Oui",
+        "% de pages non genrées":28.00
+    },
+    "Super U":{
+        "Rubriques filles et garçons":"Oui",
+        "% de pages non genrées":33.00
+    },
+    "Leclerc":{
+        "Rubriques filles et garçons":"Oui",
+        "% de pages non genrées":28.70
+    },
+    "King jouet":{
+        "Rubriques filles et garçons":"Classement thématique",
+        "% de pages non genrées":26.70
+    },
+    "Toy'R'Us":{
+        "Rubriques filles et garçons":"Oui",
+        "% de pages non genrées":16.90
+    },
+    "Joué club":{
+        "Rubriques filles et garçons":"Classement thématique",
+        "% de pages non genrées":32.40
+    },
+    "La Grande récré":{
+        "Rubriques filles et garçons":"Classement thématique",
+        "% de pages non genrées":30.50
+    },
+    "Oxybul":{
+        "Rubriques filles et garçons":"Classement thématique",
+        "% de pages non genrées":50.20
+    },
+    "Nature et Découverte":{
+        "Rubriques filles et garçons":"Classement par âge",
+        "% de pages non genrées":100
+    }
+}

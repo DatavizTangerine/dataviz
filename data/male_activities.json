@@ -1,0 +1,62 @@
+{
+    "Femmes":{
+        "Proportion de personnes ayant utilisé internet au cours des rtois denriers mois":{
+            "Tout les jours ou presque":59,
+            "Au moins une fois par semaine":12,
+            "Moins d'une fois par semaine":4,
+            "Jamais":24
+        },
+        "Proportion de personnes ayant au moins une fois sur un an...":{
+            "movie":{
+                "été au cinéma":60,
+                "dont au moins une fois par semaine":29
+            },
+            "concert":{
+                "été à un spectacle vivant (concert, théâtre, etc...)":57,
+                "dont au moins 4 fois":18
+            },
+            "culture":{
+                "visité un site culturel":54,
+                "dont au moins quatre fois":21
+            },
+            "sport":{
+                "vu un événement sportif en direct":20,
+                "dont au moins quatre fois":7
+            }
+        },
+        "Proportion de personnes ayant lu dans l’année...":{
+            "au moins un livre":66,
+            "dont au moins siz livres":38
+        }
+    },
+    "Hommes":{
+        "Proportion de personnes ayant utilisé internet au cours des rtois denriers mois":{
+            "Tout les jours ou presque":64,
+            "Au moins une fois par semaine":13,
+            "Moins d'une fois par semaine":3,
+            "Jamais":20
+        },
+        "Proportion de personnes ayant au moins une fois sur un an...":{
+            "movie":{
+                "été au cinéma":55,
+                "dont au moins une fois par semaine":29
+            },
+            "concert":{
+                "été à un spectacle vivant (concert, théâtre, etc...)":52,
+                "dont au moins 4 fois":17
+            },
+            "culture":{
+                "visité un site culturel":52,
+                "dont au moins quatre fois":20
+            },
+            "sport":{
+                "vu un événement sportif en direct":38,
+                "dont au moins quatre fois":16
+            }
+        },
+        "Proportion de personnes ayant lu dans l’année...":{
+            "au moins un livre":45,
+            "dont au moins siz livres":22
+        }
+    }
+}
