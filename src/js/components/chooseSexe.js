@@ -4,17 +4,21 @@ const chooseSex = () =>{
     const background = document.querySelector('.background');
 
     male.addEventListener('mouseover', () => {
-        background.classList.add('blue');
+        background.classList.add('yellow');
+        male.querySelector('path').classList.add('whitepath');
     })
     male.addEventListener('mouseout', () => {
-        background.classList.remove('blue');
+        background.classList.remove('yellow');
+        male.querySelector('path').classList.remove('whitepath');
     })
 
     female.addEventListener('mouseover', () => {
-        background.classList.add('pink');
+        background.classList.add('red');
+        female.querySelector('path').classList.add('whitepath');
     })
     female.addEventListener('mouseout', () => {
-        background.classList.remove('pink');
+        background.classList.remove('red');
+        female.querySelector('path').classList.remove('whitepath');
     })
 
 
