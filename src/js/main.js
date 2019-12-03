@@ -14,6 +14,7 @@ import map from './graph/pension/map';
 
 document.addEventListener("DOMContentLoaded", () =>{
     window.currentState = "first";
+    window.currentNumber = "1";
     window.currentSex = 'female';
 
     introduction();
