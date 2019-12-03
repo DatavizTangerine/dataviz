@@ -47,9 +47,9 @@ const timeline = () => {
             element.classList.remove('slideOn');
             element.classList.add('fadeOut');
         });
-        question.classList.add('slideOn');
-        question.classList.remove('slideOff');
-        question.classList.remove('fadeOut');
+        // question.classList.add('slideOn');
+        // question.classList.remove('slideOff');
+        // question.classList.remove('fadeOut');
     }
 }
 
