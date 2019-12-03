@@ -7,7 +7,8 @@ import questions from './components/questions';
 import percent from './components/percent';
 import maleBtn from './components/maleBtn';
 import femaleBtn from './components/femaleBtn';
-import histogram from './components/histogram';
+import histogram from './graph/child/female/histogram';
+import line from './graph/job/line';
 
 document.addEventListener("DOMContentLoaded", () =>{
     window.currentState = "first";
@@ -23,5 +24,6 @@ document.addEventListener("DOMContentLoaded", () =>{
     maleBtn();
     femaleBtn();
     histogram();
+    line();
 
 });

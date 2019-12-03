@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d0e7967-4451-494a-ab39-d97a7795f4ab" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/dist/img/waves.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/img/waves.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/js/components/femaleBtn.js" afterDir="false" />
@@ -9,22 +10,23 @@
       <change afterPath="$PROJECT_DIR$/src/js/components/maleBtn.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/js/components/percent.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/scss/2-Components/_percent.scss" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/data/data2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/men_emploi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/women_emploi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/graph/child/female/histogram.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/graph/job/line.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/graph/street/histogram.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/3-Graphes/_lineGraph.scss" afterDir="false" />
+>>>>>>> Graphes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/female_contraception.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/female_contraception.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mixte_emploi.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/mixte_emploi.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/cursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/introduction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/onboarding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/onboarding.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/histogram.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/1-Layouts/_chooseSexe.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/1-Layouts/_chooseSexe.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/1-Layouts/_onboarding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/1-Layouts/_onboarding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/2-Components/_line.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/2-Components/_line.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/2-Components/_timeline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/2-Components/_timeline.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,6 +66,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
+=======
+      <recent name="D:\wamp64\www\dataviz\src\js\graph\child\female" />
+      <recent name="D:\wamp64\www\dataviz\src\js\graph\child" />
+      <recent name="D:\wamp64\www\dataviz\src\js\graph" />
+>>>>>>> Graphes
       <recent name="D:\wamp64\www\dataviz\src\scss" />
       <recent name="D:\Hugo\Documents\Année-gobelins\Ressource dev\webpack\src" />
     </key>
@@ -106,7 +114,7 @@
       <workItem from="1575054939431" duration="20739000" />
       <workItem from="1575205288781" duration="8175000" />
       <workItem from="1575271178652" duration="1339000" />
-      <workItem from="1575355251569" duration="221000" />
+      <workItem from="1575355251569" duration="16642000" />
     </task>
     <servers />
   </component>
