@@ -9,6 +9,7 @@ import maleBtn from './components/maleBtn';
 import femaleBtn from './components/femaleBtn';
 import histogram from './graph/child/female/histogram';
 import line from './graph/job/line';
+import histogramMen from './graph/street/histogramMen';
 
 document.addEventListener("DOMContentLoaded", () =>{
     window.currentState = "first";
@@ -25,5 +26,6 @@ document.addEventListener("DOMContentLoaded", () =>{
     femaleBtn();
     histogram();
     line();
+    histogramMen();
 
 });

@@ -25,7 +25,7 @@ const histogram = () => {
 
    const promise = [];
 
-   promise.push(d3.json("data/female_contraception.json"));
+   promise.push(d3.json("dist/data/female_contraception.json"));
 
    Promise.all(promise).then(function (value) {
        const response = value[0];
