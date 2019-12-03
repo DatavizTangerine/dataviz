@@ -6,14 +6,16 @@
 @import './1-Layouts/introduction.scss';
 @import './1-Layouts/onboarding.scss';
 @import './1-Layouts/chooseSexe.scss';
+@import './1-Layouts/questions.scss';
 
 @import './2-Components/line.scss';
 @import './2-Components/menu.scss';
 @import './2-Components/timeline.scss';
 @import './2-Components/cursor.scss';
+@import './2-Components/range.scss';
 
 body{
   overflow: hidden;
-  cursor: none;
+  // cursor: none;
 }
 

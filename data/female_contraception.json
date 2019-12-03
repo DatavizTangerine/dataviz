@@ -159,28 +159,5 @@
         },
         "Unweighted base":120,
         "Weighted base (000s)":1358
-    },
-    "Moyenne":{
-        "Non-surgical":{
-            "Pillule":34,
-            "Préservatif masculin":33,
-            "Retrait":6,
-            "Dispositif intra-utérin":7,
-            "Injection":4,
-            "Implant":2,
-            "Patch contraceptif":1,
-            "Période sans danger":3,
-            "Cape cervicale":1,
-            "Spermicide":1,
-            "Stérilet":2,
-            "Préservatif féminin":1,
-            "Pillule du lendemain":1
-        },
-        "Surgical":{
-            "Stérilisé":8,
-            "Partenaire stérilisé":14
-        },
-        "Unweighted base":810,
-        "Weighted base (000s)":9419
     }
 }
