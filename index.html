@@ -18,11 +18,12 @@
       </nav>
       <div class="percent">
             <svg width="500" height="190" viewPort="100 100 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <circle r="75" cx="75" cy="75" fill="transparent" stroke-dasharray="500" stroke-dashoffset="0">
+                  <circle r="20" cx="20" cy="20" fill="transparent" stroke-dasharray="500" stroke-dashoffset="0">
                   </circle>
-                  <circle id="bar" transform="rotate(-90 25 25)" r="75" cx="80" cy="80" fill="transparent"
+                  <circle id="bar" transform="rotate(-90 25 25)" r="20" cx="25" cy="25" fill="transparent"
                         stroke-dasharray="498" stroke-dashoffset="0"></circle>
             </svg>
+            <span class="value"></span>
       </div>
       <div class="line__start line-top hidden"></div>
       <div class="line line-bottom"></div>
@@ -42,135 +43,86 @@
       </div>
 
       <section class="introduction">
-            <svg width="72" height="120" viewBox="0 0 72 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="413" height="147" viewBox="0 0 413 147" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
-                        <path d="M27.1156 99.7897H46.283C46.283 99.7897 52.6287 90.9067 52.6287 79.2641C52.6287 64.2838 70.9899 58.7385 70.9899 37.8187C71.0159 16.1104 54.2152 0.0262812 35.5419 0H35.5159H35.4899C16.8167 0.0262812 0.0159302 16.1104 0.0159302 37.8187C0.0159302 58.7385 18.3771 64.2838 18.3771 79.2641C18.3771 90.9067 27.1156 99.7897 27.1156 99.7897Z"
-                              fill="#333333" />
-                        <path d="M1.47234 91.7214C0.32802 83.8371 15.1262 78.6071 16.9467 76.5834C19.3654 73.929 23.4485 73.7714 26.0493 76.1892C28.676 78.6334 29.6383 81.9185 27.2456 84.5467C26.3874 85.5453 2.64267 99.6058 1.47234 91.7214Z"
-                              fill="#333333" />
-                        <path d="M43.4222 84.5204C41.3936 81.5506 42.902 78.1866 45.8148 76.1367C48.7537 74.0867 52.7588 74.8226 54.7874 77.7924C56.8679 80.8147 69.0394 87.385 68.0511 94.954C67.1408 101.735 44.1504 85.6242 43.4222 84.5204Z"
-                              fill="#333333" />
-                        <path d="M28.572 120C21.654 120 19.2354 87.4113 19.2354 87.4113C18.8452 83.8371 21.394 80.6045 24.931 80.2103C28.468 79.816 31.6669 82.3916 32.057 85.9658C32.057 85.9658 35.4899 120 28.572 120Z"
-                              fill="#333333" />
-                        <path d="M41.9918 119.711C33.9295 119.711 38.9749 85.1774 38.9749 85.1774C39.339 81.6032 42.5119 78.975 46.0489 79.343C49.5859 79.7109 52.1866 82.9172 51.8225 86.4915C51.7965 86.5177 49.4038 119.711 41.9918 119.711Z"
-                              fill="#333333" />
-                        <path d="M28.2339 53.5874C30.3405 54.9803 32.8372 56.6886 35.5159 56.6886C38.1947 56.6886 40.7174 54.9803 42.798 53.5874H28.2339Z"
-                              fill="#F2F2F2" />
-                        <path d="M52.4727 45.9921C54.5123 45.9921 56.1657 44.3213 56.1657 42.2602C56.1657 40.1991 54.5123 38.5283 52.4727 38.5283C50.4331 38.5283 48.7797 40.1991 48.7797 42.2602C48.7797 44.3213 50.4331 45.9921 52.4727 45.9921Z"
-                              fill="#F2F2F2" />
-                        <path d="M56.1137 37.2668C54.8394 37.1354 53.7471 37.0039 52.7068 37.1354C52.1866 37.1879 51.6925 37.3193 51.1723 37.5033C50.6522 37.6873 50.1321 37.9501 49.5599 38.2392C49.924 36.9777 51.1984 35.979 52.5767 35.8476C53.2529 35.7687 53.9551 35.8739 54.5533 36.1104C55.1515 36.3732 55.7236 36.7149 56.1137 37.2668Z"
-                              fill="#F2F2F2" />
-                        <path d="M18.5591 45.9921C20.5988 45.9921 22.2522 44.3213 22.2522 42.2602C22.2522 40.1991 20.5988 38.5283 18.5591 38.5283C16.5195 38.5283 14.8661 40.1991 14.8661 42.2602C14.8661 44.3213 16.5195 45.9921 18.5591 45.9921Z"
-                              fill="#F2F2F2" />
-                        <path d="M14.9181 37.2668C15.3082 36.7149 15.8804 36.3469 16.4786 36.1104C17.1027 35.8739 17.7789 35.7687 18.4551 35.8476C19.8335 35.979 21.1079 36.9514 21.472 38.2392C20.8738 37.9501 20.3537 37.6873 19.8595 37.5033C19.3394 37.3193 18.8452 37.2142 18.3251 37.1354C17.2848 37.0039 16.1925 37.1354 14.9181 37.2668Z"
-                              fill="#F2F2F2" />
+                        <path d="M155.177 53.067L159.089 76.8845C159.089 76.8845 166.249 72.4553 186.479 71.7867C186.479 71.7867 193.888 71.6195 199.715 74.3774C201.38 75.1295 202.795 76.2995 203.794 77.7202C205.293 79.8094 205.293 80.9794 205.459 83.8208C205.459 83.8208 208.207 109.226 212.286 130.286C212.286 130.286 213.118 135.216 216.032 139.228C217.697 141.568 220.194 143.239 222.942 144.075C227.021 145.328 234.347 146.248 245.752 143.156V124.854C245.752 124.854 238.093 125.857 238.01 118.168C238.01 118.252 237.76 79.893 237.76 79.893C237.76 79.893 237.927 55.6576 212.452 48.8049C212.536 48.972 184.397 40.6986 155.177 53.067Z" fill="#484848" style="mix-blend-mode:darken"/>
+                        <g style="mix-blend-mode:multiply">
+                              <path d="M212.426 89.2531C210.261 86.9131 207.847 84.8239 204.933 83.5703C187.035 75.6312 169.219 83.4868 169.219 83.4868C148.24 92.1781 150.904 115.327 150.904 115.327C151.737 130.37 160.728 138.142 168.97 141.819C177.294 145.579 186.618 146.164 195.526 144.242C212.675 140.565 215.506 130.203 215.506 130.203C222.665 113.656 221 98.613 212.426 89.2531ZM207.764 111.232C204.018 120.091 192.113 119.673 192.113 119.673C183.122 119.589 183.288 112.235 183.205 112.235C182.289 107.054 185.869 104.296 185.869 104.296C194.444 98.5294 204.018 103.376 207.264 105.215C208.013 105.633 208.43 106.469 208.43 107.304C208.513 109.979 207.764 111.232 207.764 111.232Z" fill="#FFAB33"/>
+                        </g>
+                        <g clip-path="url(#clip1)">
+                              <path d="M262.961 0.524902H295.373L294.623 146.475C294.623 146.475 277.22 145.039 262.961 139.678V0.524902Z" fill="#484848" style="mix-blend-mode:darken"/>
+                        </g>
+                        <g style="mix-blend-mode:multiply" opacity="0.9">
+                              <path d="M347.856 63.0119C326.961 36.6873 295.825 50.1421 295.825 50.1421C267.521 60.5884 263.608 92.0108 262.942 102.791C262.775 104.797 262.775 106.719 262.859 108.725C263.608 124.018 271.267 133.378 278.926 138.977C286.335 144.326 295.326 146.916 304.483 147C353.6 147.418 357.43 112.987 357.513 112.653C364.007 79.3917 347.773 62.9284 347.856 63.0119ZM325.212 104.63C321.633 126.525 294.993 117.583 294.993 117.583V78.8067C307.231 73.6254 315.222 78.1382 316.221 78.7231C316.305 78.7231 316.305 78.8067 316.388 78.8067C329.042 86.7459 325.212 104.713 325.212 104.63Z" fill="#FF614C" style="mix-blend-mode:darken"/>
+                        </g>
+                        <path d="M100.898 92.2613C101.648 86.9128 102.647 76.0487 100.316 65.5189H135.78C135.78 65.5189 142.606 111.733 110.639 133.963C110.972 133.712 87.6617 152.599 48.368 141.986C47.9518 141.818 5.99414 132.876 0.249932 83.57C0.666179 83.2357 -5.41102 46.047 23.1435 20.6416C23.4765 20.3074 52.8635 -6.10083 95.2374 8.18968C95.2374 8.18968 125.873 17.9674 133.532 51.4791H98.6506C98.6506 51.4791 93.6557 37.4393 73.0099 36.3528C73.2596 36.3528 43.1233 33.01 37.0461 66.3546C37.0461 66.1038 29.3872 110.897 70.5956 112.318C70.5956 112.318 89.4932 113.739 97.9014 100.284C99.6496 97.9441 100.482 95.1027 100.898 92.2613Z" fill="#484848" style="mix-blend-mode:darken"/>
+                        <g style="mix-blend-mode:multiply" opacity="0.9">
+                              <path d="M71.1782 65.4355V95.688H134.364C134.364 95.688 137.694 85.4088 135.78 65.4355H71.1782Z" fill="#FF614C" style="mix-blend-mode:darken"/>
+                        </g>
+                  </g>
+                  <g clip-path="url(#clip2)">
+                        <g style="mix-blend-mode:multiply">
+                              <path d="M377.023 49.9556H410.249V143.85H376.811L377.023 49.9556Z" fill="#FFAB33"/>
+                        </g>
+                        <path d="M395.901 4.24296C395.901 4.24296 407.668 4.83885 411.858 15.8627C412.874 18.5442 413.17 21.396 412.959 24.2477C412.535 29.7809 410.08 39.4853 397.34 41.8263C394.801 42.2945 392.219 42.3371 389.679 41.8689C384.812 40.9325 377.193 37.9105 374.95 28.1209C373.892 23.4816 374.145 18.5868 376.219 14.2879C378.547 9.39312 383.838 3.64708 395.901 4.24296Z" fill="#484848" style="mix-blend-mode:darken"/>
                   </g>
                   <defs>
                         <clipPath id="clip0">
-                              <rect width="71" height="120" fill="white" transform="translate(0.0159302)" />
+                              <rect width="413" height="147" fill="white"/>
+                        </clipPath>
+                        <clipPath id="clip1">
+                              <rect width="32.9355" height="145.95" fill="white" transform="translate(262.438 0.524902)"/>
+                        </clipPath>
+                        <clipPath id="clip2">
+                              <rect width="38.6861" height="139.65" fill="white" transform="translate(374.314 4.2002)"/>
                         </clipPath>
                   </defs>
             </svg>
-            <h1>Gabi</h1>
             <div class="content">
-                  <div class="text">
-                        <span>Salut</span>
-                        <span>toi,</span>
-                        <span>moi</span>
-                        <span>mon</span>
-                        <span>nom</span>
-                        <span>c’est</span>
-                        <span>Gabi !</span>
-                        <span>Tu</span>
-                        <span>peux</span>
-                        <span>m’appeler</span>
-                        <span>Gab-Gab</span>
-                        <span>si</span>
-                        <span>tu</span>
-                        <span>préfères.</span>
-                        <span>Tu</span>
-                        <span>aimerais</span>
-                        <span>savoir</span>
+                  <div class="text ">
+                        <span>Bonjour,</span>
+                        <span>je</span>
+                        <span>suis</span>
+                        <span>Gabi,</span>
+                        <span>l’avatar</span>
                         <span>qui</span>
-                        <span>je</span>
-                        <span>suis ?</span>
-                        <span>Et</span>
-                        <span>bien</span>
-                        <span>pour</span>
-                        <span>l’instant</span>
-                        <span>je</span>
-                        <span>suis</span>
-                        <span>non</span>
-                        <span>genré.</span>
-                  </div>
-
-                  <div class="text">
-                        <span>Tout</span>
-                        <span>d’abord</span>
-                        <span>mon</span>
-                        <span>ami,</span>
-                        <span>comme</span>
-                        <span>tu</span>
-                        <span>le</span>
-                        <span>sais</span>
-                        <span>je</span>
-                        <span>suis</span>
-                        <span>non</span>
-                        <span>genré</span>
-                        <span>et</span>
-                        <span>tu</span>
-                        <span>comprendras</span>
-                        <span>à</span>
-                        <span>la</span>
-                        <span>fin</span>
-                        <span>pourquoi.</span>
-                        <span>Mais</span>
-                        <span>pour</span>
-                        <span>que</span>
-                        <span>je</span>
-                        <span>puisse</span>
-                        <span>t’expliquer</span>
-                        <span>la</span>
-                        <span>suite</span>
-                        <span>il</span>
-                        <span>faut</span>
-                        <span>que</span>
-                        <span>tu</span>
-                        <span>me</span>
-                        <span>choisisses</span>
-                        <span>un</span>
-                        <span>sexe</span>
-                  </div>
-
-                  <div class="text">
-                        <span>Je</span>
-                        <span>t’invite</span>
-                        <span>à</span>
-                        <span>commencer</span>
-                        <span>dès</span>
-                        <span>maintenant</span>
-                        <span>l’expérience</span>
-                        <span>et</span>
-                        <span>ne</span>
-                        <span>t’inquiète</span>
-                        <span>pas,</span>
-                        <span>je</span>
-                        <span>suis</span>
-                        <span>la</span>
-                        <span>pour</span>
-                        <span>t’accompagner</span>
-                        <span>dans</span>
-                        <span>ce</span>
-                        <span>monde</span>
-                        <span>chargé</span>
-                        <span>d’inégalités.</span>
+                        <span>va</span>
+                        <span>t'accompagner</span>
+                        <span>lors</span>
+                        <span>de</span>
+                        <span>cette</span>
+                        <span>expérience.</span>
                   </div>
             </div>
 
             <p>Entrer</p>
+
       </section>
 
       <section class="onboarding">
+            <div class="content">
+                  <div class="text">
+                        <span>Ensemble,</span>
+                        <span>nous</span>
+                        <span>allons</span>
+                        <span>voir</span>
+                        <span>les</span>
+                        <span>inégalités</span>
+                        <span>qui</span>
+                        <span>marquent</span>
+                        <span>la</span>
+                        <span>vie</span>
+                        <span>des</span>
+                        <span>hommes</span>
+                        <span>et</span>
+                        <span>des</span>
+                        <span>femmes</span>
+                        <span>en</span>
+                        <span>France</span>
+                        <span>en</span>
+                        <span>2019.</span>
+                  </div>
+            </div>
             <svg width="133" height="224" viewBox="0 0 133 224" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50.7641 186.274H86.6692C86.6692 186.274 98.5564 169.693 98.5564 147.96C98.5564 119.996 132.951 109.645 132.951 70.5948C133 30.0727 101.528 0.0490583 66.5487 0H66.5H66.4513C31.4718 0.0490583 0 30.0727 0 70.5948C0 109.645 34.3949 119.996 34.3949 147.96C34.3949 169.693 50.7641 186.274 50.7641 186.274Z"
                         fill="#333333" />
@@ -193,46 +145,6 @@
                   <path d="M27.9154 69.5646C28.6462 68.5344 29.718 67.8476 30.8385 67.406C32.0077 66.9645 33.2744 66.7683 34.5411 66.9154C37.1231 67.1607 39.5103 68.9759 40.1923 71.3798C39.0718 70.8401 38.0975 70.3495 37.1718 70.0061C36.1975 69.6627 35.2718 69.4665 34.2975 69.3193C32.3487 69.074 30.3026 69.3193 27.9154 69.5646Z"
                         fill="#F2F2F2" />
             </svg>
-            <div class="content">
-                  <div class="text">
-                        <span>Tout</span>
-                        <span>d’abord</span>
-                        <span>mon</span>
-                        <span>ami,</span>
-                        <span>comme</span>
-                        <span>tu</span>
-                        <span>le</span>
-                        <span>sais</span>
-                        <span>je</span>
-                        <span>suis</span>
-                        <span>non</span>
-                        <span>genré</span>
-                        <span>et</span>
-                        <span>tu</span>
-                        <span>comprendras</span>
-                        <span>à</span>
-                        <span>la</span>
-                        <span>fin</span>
-                        <span>pourquoi.</span>
-                        <span>Mais</span>
-                        <span>pour</span>
-                        <span>que</span>
-                        <span>je</span>
-                        <span>puisse</span>
-                        <span>t’expliquer</span>
-                        <span>la</span>
-                        <span>suite</span>
-                        <span>il</span>
-                        <span>faut</span>
-                        <span>que</span>
-                        <span>tu</span>
-                        <span>me</span>
-                        <span>choisisses</span>
-                        <span>un</span>
-                        <span>sexe</span>
-                  </div>
-            </div>
-
             <p>Commencer</p>
       </section>
 
@@ -478,6 +390,7 @@
                         </div>
                   </div>
                   <div class="question__answers fadeOut">
+                        <div id="chartWomen"></div>
                         <div class="wrong__answer answer">c'étatit la mauvaise réponse</div>
                         <div class="right__answer answer">c'étatit la bonne réponse</div>
                   </div>
@@ -485,7 +398,6 @@
       </section>
 
       
-<div id="chart"></div>
 <div id="line"></div>
 <div id="streetMen"></div>
 <div id="streetWomen"></div>

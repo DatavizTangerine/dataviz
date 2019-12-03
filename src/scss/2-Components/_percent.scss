@@ -1,6 +1,6 @@
 .percent {
-  width: 150px;
-  height: 150px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   right: 5%;
   top: 5%;
@@ -10,7 +10,7 @@
     transform: translate(-10px, -10px);
     circle{
       transition: stroke-dashoffset 0.3s linear;
-      stroke-width: 12px;
+      stroke-width: 6px;
       stroke-dashoffset: 500;
 
       &#bar{
@@ -18,6 +18,12 @@
         stroke: $grey;
       }
     }
+  }
+
+  .value{
+    position: absolute;
+    top: 50px;
+    left: 5px;
   }
 
   .shapes {
@@ -30,27 +36,10 @@
     background: $grey;
     /* TAKIT: Using CSS var is cool for the rotation
               Using translate here to shift it from the center */
-    transform: rotate(var(--deg)) translate(-50%, 78px);
+    transform: rotate(var(--deg)) translate(-50%, 20px);
     /* TAKIT: 104px in translate means 4px of margin between circle and shapes */
   }
 
-  //.waves {
-  //  width: 350px;
-  //  height: 370px;
-  //  position: absolute;
-  //  top: -25%;
-  //  left: 50%;
-  //  margin-left: -150px;
-  //  margin-top: -150px;
-  //  border-radius: 35%;
-  //  background: rgba(255, 255, 255, .75);
-  //  animation: wave 19s infinite linear;
-  //}
-  //
-  //@keyframes wave {
-  //  from { transform: rotate(0deg);}
-  //  from { transform: rotate(360deg);}
-  //}
 }
 
 

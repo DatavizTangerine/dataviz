@@ -10,9 +10,10 @@
   opacity: 0;
   visibility: hidden;
   .content{
-    position: relative;
-    width: 720px;
+    position: absolute;
+    width: 540px;
     height: 105px;
+    top: 107px;
     .text{
       position: absolute;
       width: 100%;
@@ -36,7 +37,8 @@
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    position: relative;
+    position: absolute;
+    bottom: 112px;
 
     &:after{
       content: '';

@@ -7,12 +7,19 @@ const timeline = () => {
     let before = document.querySelector(parent + '.text__before');
     let after = document.querySelector(parent + '.text__after');
 
+    let percentSpan = document.querySelector('.percent .value');
+
     before.classList.remove('fadeOut');
     after.classList.add('fadeOut');
 
+    let percent = 0;
+    let percentStep = 100 / items.length;
+
     let dashTotal = 500;
-    let dash = dashTotal / items.length;
+    let dash = 127 / items.length;
+    percentSpan.innerHTML = percent + "%";
     circle.style.strokeDashoffset = dashTotal;
+
 
     items.forEach(item =>{  
         item.addEventListener('click', () =>{
@@ -42,8 +49,13 @@ const timeline = () => {
 
             // Jauge
             item.classList.add('clicked');
+
             dashTotal -= dash;
             circle.style.strokeDashoffset = dashTotal;
+
+            percent += percentStep;
+            percentSpan.innerHTML = percent + "%";
+
         })
     })
 
