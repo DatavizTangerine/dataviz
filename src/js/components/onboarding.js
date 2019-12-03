@@ -6,6 +6,9 @@ const onboarding = () => {
         const bottomLine = document.querySelector('.line-bottom');
         const leftLine = document.querySelector('.line__left');
         const rightLine = document.querySelector('.line__right');
+        // const timeline = document.querySelector('.timeline');
+        const topLine = document.querySelector('.line-top');
+
 
         btn.addEventListener('click', () => {
             sectionOnboarding.classList.add('fadeOut');
@@ -15,6 +18,10 @@ const onboarding = () => {
                 leftLine.classList.remove('hidden');
                 bottomLine.classList.add('hidden');
                 rightLine.classList.remove('hidden');
+
+                // timeline.classList.add('show');
+                topLine.classList.remove('hidden');
+
             },1000)
         })
     }

@@ -1,3 +1,5 @@
+import * as questionsScreens from './questionsScreens';
+
 const timeline = () => {
     const timeline = document.querySelector('.timeline');
     const items = timeline.querySelectorAll('.timeline__item');
@@ -28,24 +30,7 @@ const timeline = () => {
             })
             item.classList.add('is-active');
 
-            // Changement de question
-            let oldNumber = window.currentNumber;
-            window.currentNumber = item.getAttribute('data-number');
-            window.currentState = item.getAttribute('data-State');
-            newState();
-
-            // Display en fonction du précédent point
-            parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
-            before = document.querySelector(parent + '.text__before');
-            after = document.querySelector(parent + '.text__after');
-            if(window.currentNumber >= oldNumber){
-                before.classList.remove('fadeOut');
-                after.classList.add('fadeOut');
-            }
-            else{
-                after.classList.remove('fadeOut');
-                before.classList.add('fadeOut');
-            }
+            questionsScreens.changeState(item);
 
             // Jauge
 
@@ -60,19 +45,6 @@ const timeline = () => {
             item.classList.add('clicked');
         })
     })
-
-    function newState(){
-        let question = document.querySelector('.' + window.currentSex + '__questions .' + window.currentState + '__question');
-        let questions = document.querySelectorAll('.' + window.currentSex + '__questions .question');
-        questions.forEach(element => {
-            element.classList.add('slideOff');
-            element.classList.add('fadeOut');
-            element.classList.remove('slideOn');
-        });
-        question.classList.add('slideOn');
-        question.classList.remove('slideOff');
-        question.classList.remove('fadeOut');
-    }
 }
 
 export default timeline;

@@ -33,8 +33,6 @@ const chooseSex = () =>{
         text.classList.remove('whitepath');
 
     })
-
-
 }
 
 export default chooseSex;
