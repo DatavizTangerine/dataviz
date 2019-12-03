@@ -4,8 +4,10 @@ const introduction = () => {
         const sectionIntroduction = document.querySelector('.introduction');
         const sectionOnboarding = document.querySelector('.onboarding');
         btn.addEventListener('click', () => {
-            sectionIntroduction.classList.add('slideOff');
-            sectionOnboarding.classList.add('slideOn');
+            sectionIntroduction.classList.add('fadeOut');
+            setTimeout(function () {
+                sectionOnboarding.classList.add('fadeIn');
+            }, 1000)
         })
     }
 

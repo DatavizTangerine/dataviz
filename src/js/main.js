@@ -4,6 +4,10 @@ import chooseSexe from './components/chooseSexe';
 import timeline from './components/timeline';
 import cursor from './components/cursor';
 import questions from './components/questions';
+import percent from './components/percent';
+import maleBtn from './components/maleBtn';
+import femaleBtn from './components/femaleBtn';
+import histogram from './components/histogram';
 
 document.addEventListener("DOMContentLoaded", () =>{
     window.currentState = "first";
@@ -15,4 +19,9 @@ document.addEventListener("DOMContentLoaded", () =>{
     timeline();
     cursor();
     questions();
+    percent();
+    maleBtn();
+    femaleBtn();
+    histogram();
+
 });

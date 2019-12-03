@@ -2,21 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d0e7967-4451-494a-ab39-d97a7795f4ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webpack.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/waves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/waves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/components/femaleBtn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/components/histogram.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/components/maleBtn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/components/percent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/2-Components/_percent.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/cursor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/components/introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/introduction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/components/onboarding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/onboarding.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/timeline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/0-Bases/_animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/0-Bases/_animations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/1-Layouts/_chooseSexe.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/1-Layouts/_chooseSexe.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/1-Layouts/_introduction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/1-Layouts/_introduction.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/1-Layouts/_onboarding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/1-Layouts/_onboarding.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/2-Components/_line.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/2-Components/_line.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/2-Components/_timeline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/2-Components/_timeline.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +52,12 @@
   <component name="ProjectId" id="1U5327MMxmIHE0mz13VSm6sKK2G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Hugo/Documents/Année-gobelins/d3" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -59,6 +68,7 @@
       <recent name="D:\Hugo\Documents\Année-gobelins\Ressource dev\webpack\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\dataviz\src\scss\2-Components" />
       <recent name="J:\wamp64\www\dataviz\src\img" />
       <recent name="D:\wamp64\www\dataviz\src\img" />
       <recent name="D:\wamp64\www\dataviz\src\fonts" />
@@ -96,6 +106,7 @@
       <workItem from="1575054939431" duration="20739000" />
       <workItem from="1575205288781" duration="8175000" />
       <workItem from="1575271178652" duration="1339000" />
+      <workItem from="1575355251569" duration="221000" />
     </task>
     <servers />
   </component>

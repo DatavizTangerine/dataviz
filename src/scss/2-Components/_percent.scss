@@ -1,0 +1,56 @@
+.percent {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  border-radius: 50%;
+  background-color: transparent;
+  svg{
+    transform: translate(-10px, -10px);
+    circle{
+      transition: stroke-dashoffset 0.3s linear;
+      stroke-width: 12px;
+      stroke-dashoffset: 500;
+
+      &#bar{
+        transform: translate(5px, 5px);
+        stroke: $grey;
+      }
+    }
+  }
+
+  .shapes {
+    position: absolute;
+    top: calc(50% - 3px); /* TAKIT: position at center, 25px is half the height */
+    left: calc(50% - 3px); /* TAKIT: position at center, 3px is half the width */
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $grey;
+    /* TAKIT: Using CSS var is cool for the rotation
+              Using translate here to shift it from the center */
+    transform: rotate(var(--deg)) translate(-50%, 78px);
+    /* TAKIT: 104px in translate means 4px of margin between circle and shapes */
+  }
+
+  //.waves {
+  //  width: 350px;
+  //  height: 370px;
+  //  position: absolute;
+  //  top: -25%;
+  //  left: 50%;
+  //  margin-left: -150px;
+  //  margin-top: -150px;
+  //  border-radius: 35%;
+  //  background: rgba(255, 255, 255, .75);
+  //  animation: wave 19s infinite linear;
+  //}
+  //
+  //@keyframes wave {
+  //  from { transform: rotate(0deg);}
+  //  from { transform: rotate(360deg);}
+  //}
+}
+
+

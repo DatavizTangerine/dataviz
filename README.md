@@ -1,6 +1,6 @@
-#Projet de DataVisualisation autour du sujet : Revisiter le courant féministe 
+# Projet de DataVisualisation autour du sujet : Revisiter le courant féministe 
 
-##Initialisation
+## Initialisation
 Se placer dans le dossier www et cloner le répertoire 
 `git clone https://github.com/DatavizTangerine/dataviz.git`
 

@@ -1,18 +1,29 @@
 const timeline = () => {
     const timeline = document.querySelector('.timeline');
     const items = timeline.querySelectorAll('.timeline__item');
+    const circle = document.querySelector('.percent svg #bar');
+
 
     init();
 
+    let dashTotal = 500;
+    let dash = dashTotal / items.length;
+    circle.style.strokeDashoffset = dashTotal;
     items.forEach(item =>{  
         item.addEventListener('click', () =>{
             items.forEach(item =>{
                 item.classList.remove('is-active');
             })
             item.classList.add('is-active');
+
             window.currentState = item.getAttribute('data-state');
             console.log(window.currentState);
             newState();
+
+            item.classList.add('clicked');
+            dashTotal -= dash;
+            circle.style.strokeDashoffset = dashTotal;
+
         })
     })
 

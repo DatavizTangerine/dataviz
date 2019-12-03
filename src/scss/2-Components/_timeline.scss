@@ -1,28 +1,37 @@
 .timeline{
-  height: 0.5px;
-  background-color: rgba(20,20,20,0.5);
-  width: 815px;
+  height: 600px;
+  width: 40px;
+  bottom: calc(50% - 300px);
   position: absolute;
-  bottom: 8.3%;
-  left: calc(50% - 407.5px);
+  left: 3%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   opacity: 0;
+  z-index: 99999;
   visibility: hidden;
-  transition: all 0.8s;
-  z-index: 1;
+
+  &:after{
+    content: '';
+    background-color: rgba(51,51,51,0.5);
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+  }
   .timeline__item{
     cursor: pointer;
     width: 10px;
     height: 10px;
     background-color: $grey;
     border-radius: 50%;
-
+    transition: all 0.8s;
+    transform: scale(1);
     &.is-active{
       transition: all 0.8s;
-      border-radius: 100px;
-      height: 40px;
+      transform: scale(1.8);
     }
   }
   &.show{

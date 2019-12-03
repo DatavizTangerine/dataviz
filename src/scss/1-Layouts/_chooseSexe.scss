@@ -1,5 +1,4 @@
 .choose__sexe{
-  transform: translateX(100vw);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -7,21 +6,84 @@
   width: 100vw;
   top: 0;
   position: absolute;
+  opacity: 0;
+  visibility: hidden;
 
-  .male{
-    cursor: pointer;
-    transition: all 0.6s;
-    &:hover{
-      transition: all 0.6s;
-      transform: rotate(360deg);
+  &.male__choose{
+    .section__male{
+      .male{
+        transition: all 1s;
+        right: -38px;
+
+        &.slideTop{
+          top: 71px;
+          transition: all 1s;
+          transform: scale(0.8);
+        }
+      }
+    }
+
+    .section__female{
+      .female{
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   }
-  .female{
-    cursor: pointer;
-    transition: all 0.6s;
-    &:hover{
+  &.female__choose{
+    .section__female{
+      .female{
+        transition: all 1s;
+        left: -38px;
+      }
+    }
+    .section__male{
+      .male{
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  .section__male{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .male{
+      position: absolute;
       transition: all 0.6s;
-      transform: rotate(-360deg);
+      right: calc(50% - 38px);
+      top: calc(50% - 38px);
+      &:hover{
+        transition: all 0.6s;
+        transform: rotate(360deg);
+      }
+    }
+
+  }
+
+  .section__female{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .female{
+      position: absolute;
+      transition: all 0.6s;
+      left: calc(50% - 38px);
+      top: calc(50% - 38px);
+      &:hover{
+        transition: all 0.6s;
+        transform: rotate(-360deg);
+      }
     }
   }
 
@@ -34,4 +96,12 @@
     left: 0;
     right: 0;
   }
+
+  &.choose__done{
+    .gabi{
+     opacity: 0;
+      visibility: hidden;
+    }
+  }
 }
+
