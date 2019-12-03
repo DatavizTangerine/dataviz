@@ -1,7 +1,7 @@
 .timeline{
-  height: 600px;
+  height: 520px;
   width: 40px;
-  bottom: calc(50% - 300px);
+  bottom: calc(50% - 260px);
   position: absolute;
   left: 3%;
   display: flex;
@@ -25,13 +25,21 @@
     cursor: pointer;
     width: 10px;
     height: 10px;
-    background-color: $grey;
+    background-color: $red;
     border-radius: 50%;
     transition: all 0.8s;
     transform: scale(1);
     &.is-active{
-      transition: all 0.8s;
-      transform: scale(1.8);
+      &:after{
+        content: '';
+        width: 20px;
+        height: 20px;
+        border: 1px solid $red;
+        border-radius: 50%;
+        position: absolute;
+        top: -6px;
+        left: -6px;
+      }
     }
   }
   &.show{

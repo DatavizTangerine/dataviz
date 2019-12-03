@@ -7,7 +7,6 @@ const onboarding = () => {
         const leftLine = document.querySelector('.line__left');
         const rightLine = document.querySelector('.line__right');
         // const timeline = document.querySelector('.timeline');
-        const topLine = document.querySelector('.line-top');
 
 
         btn.addEventListener('click', () => {
@@ -20,7 +19,6 @@ const onboarding = () => {
                 rightLine.classList.remove('hidden');
 
                 // timeline.classList.add('show');
-                topLine.classList.remove('hidden');
 
             },1000)
         })

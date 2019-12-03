@@ -15,7 +15,7 @@ const timeline = () => {
     after.classList.add('fadeOut');
 
     let percent = 0;
-    let percentStep = 100 / items.length;
+    let percentStep = Math.round((100 / items.length)*10)/10;
 
     let dashTotal = 500;
     let dash = 127 / items.length;

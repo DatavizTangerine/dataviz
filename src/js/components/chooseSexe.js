@@ -5,6 +5,11 @@ const chooseSex = () =>{
     const leftLine = document.querySelector('.line__left');
     const rightLine = document.querySelector('.line__right');
     const text = document.querySelector('.choose__sexe p');
+    const sectionChoose = document.querySelector('.choose__sexe');
+    const sectionTime = document.querySelector('.choose__time');
+    const sectionFemale = document.querySelector('.female__questions');
+    const sectionMale = document.querySelector('.male__questions');
+
 
     male.addEventListener('mouseover', () => {
         background.classList.add('yellow');
@@ -18,7 +23,6 @@ const chooseSex = () =>{
         leftLine.classList.remove('whitepath');
         text.classList.remove('whitepath');
     })
-
     female.addEventListener('mouseover', () => {
         background.classList.add('red');
         female.querySelector('path').classList.add('whitepath');
@@ -32,6 +36,16 @@ const chooseSex = () =>{
         rightLine.classList.remove('whitepath');
         text.classList.remove('whitepath');
 
+    })
+
+    female.addEventListener('click', () => {
+        sectionChoose.classList.remove('fadeIn');
+        sectionChoose.classList.add('fadeOut');
+        sectionTime.classList.add('fadeIn');
+        rightLine.classList.add('hidden');
+        leftLine.classList.add('hidden');
+        sectionFemale.classList.add('selected');
+        sectionMale.classList.add('not__selected');
     })
 }
 

@@ -7,10 +7,13 @@ import questions from './components/questions';
 import percent from './components/percent';
 import maleBtn from './components/maleBtn';
 import femaleBtn from './components/femaleBtn';
+import timelineHorizontal from './components/timelineHorizontal';
+
 import histogram from './graph/child/female/histogram';
 import line from './graph/job/line';
 import histogramMen from './graph/street/histogramMen';
 import map from './graph/pension/map';
+
 
 document.addEventListener("DOMContentLoaded", () =>{
     window.currentState = "first";
@@ -26,9 +29,10 @@ document.addEventListener("DOMContentLoaded", () =>{
     percent();
     maleBtn();
     femaleBtn();
-    histogram();
-    line();
+    timelineHorizontal();
+
     histogramMen();
     map();
-
+    histogram();
+    line();
 });

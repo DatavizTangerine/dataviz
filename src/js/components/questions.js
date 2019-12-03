@@ -16,11 +16,11 @@ const questions = () => {
             const timeline = document.querySelector('.timeline');
     
             btn.addEventListener('click', () => {
-                window.currentSex = sex;
-                sectionChoose.classList.add('slideOff');
-                sectionChoose.classList.remove('slideOn');
-                sectionQuestions.classList.add('slideOn');
-                timeline.classList.add('show');
+                // window.currentSex = sex;
+                // sectionChoose.classList.add('slideOff');
+                // sectionChoose.classList.remove('slideOn');
+                // sectionQuestions.classList.add('slideOn');
+                // timeline.classList.add('show');
             })
         }
     }

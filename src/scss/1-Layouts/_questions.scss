@@ -1,5 +1,6 @@
 .questions{
-    transform: translateX(100vw);
+    opacity: 0;
+  visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,6 +9,11 @@
     width: 100vw;
     top: 0;
     position: absolute;
+
+    .sign{
+      position: absolute;
+      top: 75px;
+    }
     p{
       font-weight: normal;
       font-size: 24px;
