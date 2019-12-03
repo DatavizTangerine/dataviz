@@ -9,6 +9,7 @@ const maleQuestions = () => {
         const choices = document.querySelectorAll(parent + ' .choice');
         const right_answer = document.querySelector(parent + ' .right__answer');
         const wrong_answer = document.querySelector(parent + ' .wrong__answer');
+
         choices.forEach(element => {
             element.addEventListener('click',() => {
                 if(element.getAttribute('data-answer') == "true"){

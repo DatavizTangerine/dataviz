@@ -13,7 +13,7 @@ import histogramMen from './graph/street/histogramMen';
 
 document.addEventListener("DOMContentLoaded", () =>{
     window.currentState = "first";
-    window.currentSex = '';
+    window.currentSex = 'female';
 
     introduction();
     onboarding();
