@@ -3,6 +3,7 @@ import * as d3 from "d3";
 const map = () => {
     const width = 550, height = 550;
     let id = -1;
+    let i = 0;
 
     const path = d3.geoPath();
     const projection = d3.geoConicConformal()
@@ -27,7 +28,12 @@ const map = () => {
             .attr("d", path)
             .attr("id", id + 1)
     .on("click", function(d) {
-      d3.select(this).style("fill", "red");
+        i++;
+        if (i == 4) {
+            d3.event.stopPropagation();
+        }
+
+      d3.select(this).style("fill", "#FF614C");
         });
         id++
     });

@@ -17,13 +17,43 @@
     left: -4px;
   }
 }
+
+.side__line{
+  position: absolute;
+  top: 50%;
+  border: 1px solid #484848;
+  width: 150px;
+  transition: 0.8s all;
+  &.hidden{
+    opacity: 0;
+  }
+
+  &.whitepath{
+    transition: 0.8s all ease;
+    border-color: white;
+  }
+}
+
+.line__left{
+  left: 0;
+}
+
+.line__right{
+  right: 0;
+}
 .line-bottom{
   bottom: 0;
+  transition: 1s all;
+  &.hidden{
+    transition: 1s all;
+    opacity: 0;
+  }
 }
 .line-top{
   z-index: 1;
   top: 0;
   height: 61px !important;
+  transition: 1s all;
   &.hidden{
     opacity: 0;
   }

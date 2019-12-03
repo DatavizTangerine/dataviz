@@ -3,16 +3,18 @@ const onboarding = () => {
     if (btn){
         const sectionOnboarding = document.querySelector('.onboarding');
         const sectionChoose = document.querySelector('.choose__sexe');
-        const timeline = document.querySelector('.timeline');
-        const topLine = document.querySelector('.line-top');
+        const bottomLine = document.querySelector('.line-bottom');
+        const leftLine = document.querySelector('.line__left');
+        const rightLine = document.querySelector('.line__right');
 
         btn.addEventListener('click', () => {
             sectionOnboarding.classList.add('fadeOut');
             sectionOnboarding.classList.remove('fadeIn');
             setTimeout(function () {
                 sectionChoose.classList.add('fadeIn');
-                timeline.classList.add('show');
-                topLine.classList.remove('hidden');
+                leftLine.classList.remove('hidden');
+                bottomLine.classList.add('hidden');
+                rightLine.classList.remove('hidden');
             },1000)
         })
     }

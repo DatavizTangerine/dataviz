@@ -48,14 +48,16 @@ const timeline = () => {
             }
 
             // Jauge
+
+
+            if (!item.classList.contains('clicked')){
+                dashTotal -= dash;
+                circle.style.strokeDashoffset = dashTotal;
+
+                percent += percentStep;
+                percentSpan.innerHTML = percent + "%";
+            }
             item.classList.add('clicked');
-
-            dashTotal -= dash;
-            circle.style.strokeDashoffset = dashTotal;
-
-            percent += percentStep;
-            percentSpan.innerHTML = percent + "%";
-
         })
     })
 

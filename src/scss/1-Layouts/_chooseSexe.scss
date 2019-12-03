@@ -9,9 +9,27 @@
   opacity: 0;
   visibility: hidden;
 
+  p{
+    position: absolute;
+    top: 14.67%;
+
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #484848;
+    transition: 0.8s all ease;
+    &.whitepath{
+      transition: 0.8s all ease;
+     color: white;
+    }
+  }
+
   &.male__choose{
     .section__male{
       .male{
+        cursor: pointer;
         transition: all 1s;
         right: -38px;
 
@@ -33,6 +51,7 @@
   &.female__choose{
     .section__female{
       .female{
+        cursor: pointer;
         transition: all 1s;
         left: -38px;
       }
@@ -45,47 +64,27 @@
     }
   }
 
-  .section__male{
-    position: absolute;
-    width: 50%;
-    left: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .male{
-      position: absolute;
+  .male{
+     position: relative;
+    z-index: 999;
+     transition: all 0.6s;
+     &:hover{
+       cursor: pointer;
+       transition: all 0.6s;
+       transform: rotate(360deg);
+     }
+   }
+  .female{
+    position: relative;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all 0.6s;
+    &:hover{
       transition: all 0.6s;
-      right: calc(50% - 38px);
-      top: calc(50% - 38px);
-      &:hover{
-        transition: all 0.6s;
-        transform: rotate(360deg);
-      }
-    }
-
-  }
-
-  .section__female{
-    position: absolute;
-    width: 50%;
-    right: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .female{
-      position: absolute;
-      transition: all 0.6s;
-      left: calc(50% - 38px);
-      top: calc(50% - 38px);
-      &:hover{
-        transition: all 0.6s;
-        transform: rotate(-360deg);
-      }
+      transform: rotate(-360deg);
     }
   }
+
 
   .background{
     transition: 0.7s all;
