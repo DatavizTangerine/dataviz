@@ -12,7 +12,7 @@ import line from './graph/job/line';
 
 document.addEventListener("DOMContentLoaded", () =>{
     window.currentState = "first";
-    window.currentSex = '';
+    window.currentSex = 'female';
 
     introduction();
     onboarding();
