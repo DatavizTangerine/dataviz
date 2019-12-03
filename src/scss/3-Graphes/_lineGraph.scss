@@ -19,3 +19,18 @@
   position: absolute;
   bottom: 0;
 }
+
+#map{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  path{
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover{
+      fill: red;
+      transition: all 0.5s;
+    }
+  }
+}
