@@ -3,7 +3,7 @@ const onboarding = () => {
     if (btn){
         const sectionOnboarding = document.querySelector('.onboarding');
         const sectionChoose = document.querySelector('.choose__sexe');
-        const timeline = document.querySelector('.timeline');
+        // const timeline = document.querySelector('.timeline');
         const topLine = document.querySelector('.line-top');
 
         btn.addEventListener('click', () => {
@@ -11,7 +11,7 @@ const onboarding = () => {
             sectionOnboarding.classList.remove('fadeIn');
             setTimeout(function () {
                 sectionChoose.classList.add('fadeIn');
-                timeline.classList.add('show');
+                // timeline.classList.add('show');
                 topLine.classList.remove('hidden');
             },1000)
         })

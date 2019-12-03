@@ -20,8 +20,6 @@ const chooseSex = () =>{
         background.classList.remove('red');
         female.querySelector('path').classList.remove('whitepath');
     })
-
-
 }
 
 export default chooseSex;
