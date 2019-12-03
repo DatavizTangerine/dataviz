@@ -13,8 +13,22 @@ const timeline = () => {
             })
             item.classList.add('is-active');
 
-            window.currentState = item.getAttribute('data-state');
+            let oldNumber = window.currentNumber;
+            window.currentNumber = item.getAttribute('data-number');
+            window.currentState = item.getAttribute('data-State');
             newState();
+
+            //display en fonction du précédent point
+            let before = document.querySelector('.' + window.currentSex + '__questions .' + window.currentState + '__question .text__before');
+            let after = document.querySelector('.' + window.currentSex + '__questions .' + window.currentState + '__question .text__after');
+            if(window.currentNumber >= oldNumber){
+                before.classList.remove('fadeOut');
+                after.classList.add('fadeOut');
+            }
+            else{
+                after.classList.remove('fadeOut');
+                before.classList.add('fadeOut');
+            }
 
             item.classList.add('clicked');
             dashTotal -= dash;
