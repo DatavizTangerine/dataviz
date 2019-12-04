@@ -45,5 +45,13 @@
       position: static !important;
     }
 
+    .item ul{
+      display: flex;
+    }
+
+    .item ul p{
+      width: auto !important;
+    }
+
 
   }

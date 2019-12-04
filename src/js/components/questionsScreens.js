@@ -11,9 +11,11 @@ const changeState = (item) => {
     screensEvent();
     hideAllScreens();
     showFirstScreen();
+
+    changeSex();
 }
 
-function newState(){
+function newState() {
     let parent = document.querySelector('.' + window.currentSex + '__questions');
     let question = parent.querySelector('.' + window.currentState + '__question');
 
@@ -24,8 +26,7 @@ function newState(){
     question.classList.remove('fadeOut');
 }
 
-function hideAllStates()
-{
+function hideAllStates() {
     let questions = document.querySelectorAll('.' + window.currentSex + '__questions .question');
     questions.forEach(element => {
         element.classList.add('slideOff');
@@ -37,26 +38,29 @@ function hideAllStates()
 const displayState = (oldNumber) => {
     // Display en fonction du précédent point
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
-    let before = document.querySelector(parent + '.text__before');
-    let after = document.querySelector(parent + '.text__after');
-    if (window.currentNumber >= oldNumber) {
-        before.classList.remove('fadeOut');
-        after.classList.add('fadeOut');
-    }
-    else {
-        after.classList.remove('fadeOut');
-        before.classList.add('fadeOut');
+
+    if(document.querySelector(parent + '.question__onboarding')) {
+        let before = document.querySelector(parent + '.text__before');
+        let after = document.querySelector(parent + '.text__after');
+        if (window.currentNumber >= oldNumber) {
+            before.classList.remove('fadeOut');
+            after.classList.add('fadeOut');
+        }
+        else {
+            after.classList.remove('fadeOut');
+            before.classList.add('fadeOut');
+        }
     }
 }
 
-function screensEvent(){
+function screensEvent() {
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
     let screens = document.querySelector(parent).children;
 
     // Next screen jusqu'à la question
     let increment = 0;
-    document.body.onkeyup = function(e){
-        if(increment < screens.length-2 && e.keyCode == 32){
+    document.body.onkeyup = function (e) {
+        if (increment < screens.length - 2 && e.keyCode == 32) {
             screens[increment].classList.remove('active__screen');
             screens[increment].classList.add('fadeOut');
             screens[increment].classList.remove('fadeIn');
@@ -68,11 +72,10 @@ function screensEvent(){
     }
 }
 
-function hideAllScreens()
-{
+function hideAllScreens() {
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
     let screens = document.querySelector(parent).children;
-    for(let i = 0; i < screens.length; i++){
+    for (let i = 0; i < screens.length; i++) {
         screens[i].classList.add('fadeOut');
         screens[i].classList.remove('fadeIn');
     }
@@ -80,7 +83,7 @@ function hideAllScreens()
     screens[0].classList.add('fadeIn');
 }
 
-function showFirstScreen(){
+function showFirstScreen() {
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
     let intro = document.querySelector(parent + ' .active__screen');
 
@@ -89,4 +92,30 @@ function showFirstScreen(){
     intro.classList.add('fadeIn');
 }
 
-export {changeState};
+function changeSex(){
+    let parent = '.' + window.currentSex + '__questions ';
+    let btn = document.querySelector(parent + '.' + window.currentState + '__question .changeSex');
+    let other_sex_parent = document.querySelector('.not__selected');
+
+    btn.addEventListener('click',() => {
+        // alert(parent);
+
+        console.log(parent, other_sex_parent);
+
+        document.querySelector(parent).classList.add('not__selected');
+        document.querySelector(parent).classList.add('fadeOut');
+        document.querySelector(parent).classList.remove('fadeIn');
+        document.querySelector(parent).classList.remove('selected');
+
+        other_sex_parent.classList.remove('not__selected');
+        other_sex_parent.classList.add('selected');
+        other_sex_parent.classList.add('fadeIn');
+
+        let question = other_sex_parent.querySelector('.' + window.currentState + '__question');
+        question.classList.add('slideOn');
+        question.classList.remove('slideOff');
+        question.classList.remove('fadeOut');
+    })
+}
+
+export { changeState };

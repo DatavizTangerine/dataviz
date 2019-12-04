@@ -5,7 +5,7 @@ const timelineHorizontal = () => {
     const items = document.querySelectorAll('.timeline__horizontal .timeline__item');
     const chooseTime = document.querySelector('.choose__time');
     const percent = document.querySelector('.percent');
-    const selected = document.querySelector('.female__questions');
+    // const selected = document.querySelector('.female__questions');
     const bottomLine = document.querySelector('.line-bottom');
     const topLine = document.querySelector('.line-top');
 
