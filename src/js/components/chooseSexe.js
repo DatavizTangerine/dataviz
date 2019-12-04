@@ -44,8 +44,9 @@ const chooseSex = () =>{
         sectionTime.classList.add('fadeIn');
         rightLine.classList.add('hidden');
         leftLine.classList.add('hidden');
-        sectionMmale.classList.add('selected');
+        sectionMale.classList.add('selected');
         sectionFemale.classList.add('not__selected');
+        window.currentSex = 'male';
     })
     female.addEventListener('click', () => {
         sectionChoose.classList.remove('fadeIn');
@@ -55,6 +56,7 @@ const chooseSex = () =>{
         leftLine.classList.add('hidden');
         sectionFemale.classList.add('selected');
         sectionMale.classList.add('not__selected');
+        window.currentSex = 'female';
     })
 }
 
