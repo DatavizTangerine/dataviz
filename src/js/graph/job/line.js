@@ -21,7 +21,7 @@ const line = () => {
 
     const promise = [];
 
-    promise.push(d3.json("dist/data/mixte_emploi.json"));
+    promise.push(d3.json("data/mixte_emploi.json"));
 
 
 

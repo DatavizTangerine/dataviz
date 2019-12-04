@@ -1,0 +1,19 @@
+{
+    "adolescence": {
+        "datas": [
+            {
+                "name": "Pillule",
+                "value": 54
+            },
+            {
+                "name": "Préservatif",
+                "value": 65
+            },
+            {
+                "name": "Autres",
+                "value": 31
+            }
+
+        ]
+    }
+}
