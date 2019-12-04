@@ -4,6 +4,7 @@ const timeline = () => {
     const timeline = document.querySelector('.timeline');
     const items = timeline.querySelectorAll('.timeline__item');
     const circle = document.querySelector('.percent svg #bar');
+    const bottomLine = document.querySelector('.line-bottom');
 
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
     let before = document.querySelector(parent + '.text__before');
@@ -30,6 +31,9 @@ const timeline = () => {
             })
             item.classList.add('is-active');
 
+            if (bottomLine.classList.contains('hidden')){
+                bottomLine.classList.remove('hidden');
+            }
             questionsScreens.changeState(item);
 
             if (!item.classList.contains('clicked')){

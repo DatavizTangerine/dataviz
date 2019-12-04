@@ -42,6 +42,7 @@ const questions = () => {
         const thisSection = document.querySelector(parent + ' .question__choices');
 
         const answersSection = document.querySelector(parent + ' .question__answers');
+        const bottomLine = document.querySelector('.line-bottom');
 
         choices.forEach(element => {
             element.addEventListener('click',() => {
@@ -50,6 +51,8 @@ const questions = () => {
 
                 answersSection.classList.remove('fadeOut');
                 answersSection.classList.add('fadeIn');
+
+                bottomLine.classList.add('hidden');
             })
         });
     }

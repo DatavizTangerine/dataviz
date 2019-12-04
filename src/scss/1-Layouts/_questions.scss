@@ -20,7 +20,7 @@
       line-height: 28px;
       font-family: $main-font;
       color: $grey;
-      width: 720px;
+      width: 725px;
       text-align: center;
     }
 
@@ -37,6 +37,7 @@
     .question{
       display: flex;
       justify-content: center;
+      align-items: center;
     }
 
     .item{
