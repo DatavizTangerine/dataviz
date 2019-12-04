@@ -1,6 +1,7 @@
 const questions = () => {
     setQuestionsNoAnswers('female','.first__question');
     setQuestionsNoAnswers('female','.second__question');
+    setQuestionsNoAnswers('female','.fifth__question');
     setQuestionsNoAnswers('male','.second__question');
 
     setQuestionsNoAnswers('male','.first__question');

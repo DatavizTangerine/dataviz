@@ -1,8 +1,4 @@
 #lineWomen{
-  display: none;
-  position: absolute;
-  top: 0;
-
   .line{
     stroke-width: 5px;
     fill: none;
@@ -10,11 +6,6 @@
 }
 
 #lineMen{
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-
   .line{
     stroke-width: 5px;
     fill: none;
@@ -63,12 +54,7 @@
   right: 0;
 }
 
-#map{
-  display:none;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
+#mapWomenChoice{
   path{
     transition: all 0.5s;
     cursor: pointer;
