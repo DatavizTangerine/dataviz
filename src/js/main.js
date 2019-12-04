@@ -8,6 +8,7 @@ import percent from './components/percent';
 import maleBtn from './components/maleBtn';
 import femaleBtn from './components/femaleBtn';
 import timelineHorizontal from './components/timelineHorizontal';
+import range from './components/range';
 
 import histogram from './graph/child/female/histogram';
 import line from './graph/job/line';
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     maleBtn();
     femaleBtn();
     timelineHorizontal();
+    range();
 
     histogramMen();
     map();
