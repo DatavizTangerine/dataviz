@@ -1,3 +1,5 @@
+import * as questionsScreens from './questionsScreens';
+
 const timelineHorizontal = () => {
     const timeline = document.querySelector('.timeline');
     const items = document.querySelectorAll('.timeline__horizontal .timeline__item');
@@ -17,6 +19,8 @@ const timelineHorizontal = () => {
             bottomLine.classList.remove('hidden');
             topLine.classList.remove('hidden');
             timeline.classList.add('fadeIn');
+
+            questionsScreens.changeState(item);
         })
     })
 }
