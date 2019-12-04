@@ -1,0 +1,60 @@
+{
+    "titles":[
+        {
+            "rubrique":"Rubriques filles et garçons",
+            "percent":"% de pages non genrées"
+        }
+    ],
+    "datas":[
+        {
+            "shop":"Intermarché",
+            "rubrique":"Oui",
+            "percent":21.90
+        },
+        {
+            "shop":"Carrefour",
+            "rubrique":"Oui",
+            "percent":28.00
+        },
+        {
+            "shop":"Super U",
+            "rubrique":"Oui",
+            "percent":33.00
+        },
+        {
+            "shop":"Leclerc",
+            "rubrique":"Oui",
+            "percent":28.70
+        },
+        {
+            "shop":"King jouet",
+            "rubrique":"Classement thématique",
+            "percent":26.70
+        },
+        {
+            "shop":"Toy'R'Us",
+            "rubrique":"Oui",
+            "percent":16.90
+        },
+        {
+            "shop":"Joué club",
+            "rubrique":"Classement thématique",
+            "percent":32.40
+        },
+        {
+            "shop":"La Grande récré",
+            "rubrique":"Classement thématique",
+            "percent":30.50
+        },
+        {
+            "shop":"Oxybul",
+            "rubrique":"Classement thématique",
+            "percent":50.20
+        },
+        {
+            "shop":"Nature et Découverte",
+            "rubrique":"Classement par âge",
+            "percent":100
+        }
+    ]
+}

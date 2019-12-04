@@ -2,7 +2,7 @@ import maleQuestions from './maleQuestions';
 import femaleQuestions from './femaleQuestions';
 
 const questions = () => {
-    setQuestionsAnswerUnique('female','.first__question');
+    setQuestionsNoAnswers('female','.first__question');
     setQuestionsAnswersChoices('male','.first__question');
 
     setQuestionsAnswerUnique('male','.second__question');
@@ -39,9 +39,17 @@ const questions = () => {
         const parent = '.' + sex + '__questions ' + questionNumber;
         const choices = document.querySelectorAll(parent + ' .choice');
 
+        const thisSection = document.querySelector(parent + ' .question__choices');
+
+        const answersSection = document.querySelector(parent + ' .question__answers');
+
         choices.forEach(element => {
             element.addEventListener('click',() => {
+                thisSection.classList.remove('fadeIn');
+                thisSection.classList.add('fadeOut');
 
+                answersSection.classList.remove('fadeOut');
+                answersSection.classList.add('fadeIn');
             })
         });
     }

@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Men",
+        "values": [
+            {"date": "2015", "percent": "75.3 "},
+            {"date": "2016", "percent": "75.4 "},
+            {"date": "2017", "percent": "75.6"},
+            {"date": "2018", "percent": "75.8"}
+        ]
+    },
+    {
+        "name": "Women",
+        "values": [
+            {"date": "2015", "percent": "67.3 "},
+            {"date": "2016", "percent": "67.6"},
+            {"date": "2017", "percent": "67.6"},
+            {"date": "2018", "percent": "68.2"}
+        ]
+    }
+]

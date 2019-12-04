@@ -20,7 +20,7 @@ const map = () => {
 
     const deps = svg.append("g");
 
-    d3.json('dist/data/map.json').then(function(geojson) {
+    d3.json('data/map.json').then(function(geojson) {
         deps.selectAll("path")
             .data(geojson.features)
             .enter()

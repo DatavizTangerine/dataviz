@@ -1,0 +1,86 @@
+{
+    "Taux d’adhésion":{
+        "Femmes":{
+            "Sport":15,
+            "Culture":10,
+            "Loisirs":7,
+            "Club de 3e âge":4,
+            "Religion":3,
+            "Humanitaire":7,
+            "Défense de droits":4,
+            "Environnement":1,
+            "Syndicat":5,
+            "Groupement professionnel":2,
+            "Politique":1
+        },
+        "Hommes":{
+            "Sport":20,
+            "Culture":8,
+            "Loisirs":8,
+            "Club de 3e âge":3,
+            "Religion":2,
+            "Humanitaire":5,
+            "Défense de droits":3,
+            "Environnement":2,
+            "Syndicat":8,
+            "Groupement professionnel":3,
+            "Politique":2
+        }
+    },
+    "Participation régulière":{
+        "Femmes":{
+            "Sport":86,
+            "Culture":74,
+            "Loisirs":73,
+            "Club de 3e âge":67,
+            "Religion":68,
+            "Humanitaire":52,
+            "Défense de droits":58,
+            "Environnement":38,
+            "Syndicat":27,
+            "Groupement professionnel":43,
+            "Politique":42
+        },
+        "Hommes":{
+            "Sport":79,
+            "Culture":72,
+            "Loisirs":70,
+            "Club de 3e âge":62,
+            "Religion":67,
+            "Humanitaire":53,
+            "Défense de droits":55,
+            "Environnement":42,
+            "Syndicat":32,
+            "Groupement professionnel":49,
+            "Politique":45
+        }
+    },
+    "Participation de temps en temps, tout au long de l’année":{
+        "Femmes":{
+            "Sport":8,
+            "Culture":15,
+            "Loisirs":16,
+            "Club de 3e âge":18,
+            "Religion":20,
+            "Humanitaire":14,
+            "Défense de droits":18,
+            "Environnement":22,
+            "Syndicat":18,
+            "Groupement professionnel":28,
+            "Politique":19
+        },
+        "Hommes":{
+            "Sport":13,
+            "Culture":16,
+            "Loisirs":13,
+            "Club de 3e âge":17,
+            "Religion":16,
+            "Humanitaire":11,
+            "Défense de droits":17,
+            "Environnement":13,
+            "Syndicat":16,
+            "Groupement professionnel":25,
+            "Politique":12
+        }
+    }
+}

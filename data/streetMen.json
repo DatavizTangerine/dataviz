@@ -1,0 +1,41 @@
+[
+  {
+    "categorie": "18-29 ans",
+    "values": [
+      {
+        "value": 17.1,
+        "rate": "insult"
+      },
+      {
+        "value": 0,
+        "rate": "violence"
+      }
+    ]
+  },
+  {
+    "categorie": "30-49 ans",
+    "values": [
+      {
+        "value": 15.3,
+        "rate": "insult"
+      },
+      {
+        "value": 1.9,
+        "rate": "violence"
+      }
+    ]
+  },
+  {
+    "categorie": "50-79 ans",
+    "values": [
+      {
+        "value": 8.9,
+        "rate": "insult"
+      },
+      {
+        "value": 0,
+        "rate": "violence"
+      }
+    ]
+  }
+]
