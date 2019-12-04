@@ -15,6 +15,7 @@ const range = () => {
 
         slider.addEventListener('input', function () {
             this.updateSliderOutput();
+            this.updateSliderLevel();
         }.bind(this), false);
 
         this.level = function () {
@@ -44,17 +45,18 @@ const range = () => {
             const remaining = this.slider.querySelector('.slider-remaining');
             output.value = this.level() + "%";
             output.style.left = this.level() + 1 + '%';
-            if (this.level()-100 < -90){
-                svgs.forEach(svg => {
-                    svg.style.transform = "translateX(" + (-10) + "%)"
-                })
-            }
-            else{
+            if (!(this.level()-100 < -90)){
                 output.style.transform = "translateX(" +  (this.level()-100) + "%)"
                 svgs.forEach(svg => {
                     svg.style.transform = "translateX(" + (this.level()-100) + "%)"
                 })
             }
+            // else{
+            //     output.style.transform = "translateX(" +  (this.level()-100) + "%)"
+            //     svgs.forEach(svg => {
+            //         svg.style.transform = "translateX(" + (this.level()-100) + "%)"
+            //     })
+            // }
             if (remaining) {
                 remaining.style.width = this.remainingString() + '%';
             }
@@ -64,6 +66,15 @@ const range = () => {
             const input = this.slider.querySelector('.slider-input');
             input.value = num;
         }
+
+        this.levelString = function() {
+            return parseInt(this.level());
+          }
+          
+        this.updateSliderLevel =function() {
+            var level = this.slider.querySelector('.slider-level');
+            level.style.width = this.levelString() + '%';
+          }
 
 
     }
@@ -75,6 +86,7 @@ const range = () => {
 
         slider.addEventListener('input', function () {
             this.updateSliderOutput();
+            this.updateSliderLevel();
         }.bind(this), false);
 
         this.level = function () {
@@ -121,6 +133,15 @@ const range = () => {
             const input = this.slider.querySelector('.slider-input');
             input.value = num;
         }
+
+                this.levelString = function() {
+            return parseInt(this.level());
+          }
+          
+        this.updateSliderLevel =function() {
+            var level = this.slider.querySelector('.slider-level');
+            level.style.width = this.levelString() + '%';
+          }
 
 
     }

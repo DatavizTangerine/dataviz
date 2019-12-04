@@ -6,6 +6,7 @@
   p{
     margin-bottom: 60px;
   }
+
   .condom, .pill{
     display: flex;
     flex-direction: column;
@@ -130,12 +131,16 @@
   height: 2px;
   background-color: #ddd;
   border-radius: 0.25rem;
+  max-width: 480px;
 }
 .slider-level {
   height: 2px;
-  background-color: #be1450;
+  background-color: $red;
   width: 50%;
   border-radius: 1rem;
+  position: absolute;
+  left: 0;
+  transform: translateY(1px);
 }
 #scrubber .slider-thumb {
   display: none;

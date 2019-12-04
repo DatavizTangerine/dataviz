@@ -4,6 +4,7 @@
     border-radius: 60px;
     transition: 0.6s all;
     width: auto !important;
+    font-family: $main-font-light;
     &:hover{
         background-color: $yellow;
         color: white;
