@@ -73,62 +73,6 @@
   }
 }
 
-.condom{
-  // display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  svg{
-    g{
-      position: relative;
-      overflow: hidden;
-      .condom_svg{
-        position: absolute;
-        z-index: -1;
-      }
-    }
-
-  }
-
-  .range{
-    width: 100%;
-    position: relative;
-    .left__ball, .right__ball{
-      width: 10px;
-      height: 10px;
-      background-color: $grey;
-      border-radius: 50%;
-      position: absolute;
-    }
-
-    .left__ball{
-      left: 0;
-    }
-    .right__ball{
-      right: 0;
-    }
-    .range__condom{
-      width: calc(100% - 20px);
-       appearance: none;
-       height: 1px;
-       background-color: $grey;
-
-       &::-webkit-slider-thumb {
-         -webkit-appearance: none; /* Override default look */
-         appearance: none;
-         width: 5px; /* Set a specific slider handle width */
-         height: 25px; /* Slider handle height */
-         background: $red; /* Green background */
-         cursor: pointer; /* Cursor on hover */
-         border-radius: 100px;
-       }
-     }
-  }
-
-
-}
-
 
 .slider {
   position: relative;
