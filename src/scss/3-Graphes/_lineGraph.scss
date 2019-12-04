@@ -1,18 +1,28 @@
-#line{
-  display:none;
+#lineWomen{
+  display: none;
   position: absolute;
   top: 0;
 
   .line{
+    stroke-width: 5px;
     fill: none;
   }
 }
 
-#chart{
+#lineMen{
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
 
+  .line{
+    stroke-width: 5px;
+    fill: none;
+  }
+}
+
+
+#chartWomen{
   .domain{
     display:none;
   }
@@ -31,9 +41,26 @@
 }
 
 #streetMen{
-  display:none;
+  display: none;
   position: absolute;
   bottom: 0;
+   .round{
+    stroke: $red;
+    stroke-width: 10;
+    stroke-linejoin: round;
+  }
+
+  text{
+    fill: black;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+#streetWomen{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #map{

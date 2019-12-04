@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Women",
+        "values": [
+            {"date": "2015", "percent": "67.3 "},
+            {"date": "2016", "percent": "67.6"},
+            {"date": "2017", "percent": "67.6"},
+            {"date": "2018", "percent": "68.2"}
+        ]
+    }
+]

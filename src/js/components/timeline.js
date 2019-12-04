@@ -16,7 +16,7 @@ const timeline = () => {
     after.classList.add('fadeOut');
 
     let percent = 0;
-    let percentStep = Math.round((100 / items.length)*10)/10;
+    let percentStep = Math.round((100 / items.length));
 
     let dashTotal = 500;
     let dash = 127 / items.length;
@@ -41,6 +41,10 @@ const timeline = () => {
                 circle.style.strokeDashoffset = dashTotal;
 
                 percent += percentStep;
+
+                if (percent > 100) {
+                    percent = 100;
+                }
                 percentSpan.innerHTML = percent + "%";
             }
             item.classList.add('clicked');
