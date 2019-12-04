@@ -1,14 +1,12 @@
 const range = () => {
-    const volumeSlider = document.querySelector('.range .condom');
+    const volumeSlider = document.querySelector('.condom');
     const pillsSlider = document.querySelector('.range .pill');
     const pills = pillsSlider.querySelectorAll('svg g');
-
 
     const svgs = volumeSlider.querySelectorAll('svg .condom_svg');
 
     function Slider(slider) {
         this.slider = slider;
-
 
         slider.addEventListener('input', function () {
             this.updateSliderOutput();
@@ -37,13 +35,13 @@ const range = () => {
         }
 
         this.updateSliderOutput = function () {
-             const output = this.slider.querySelector('.output__range');
+            const output = this.slider.querySelector('.output__range');
             const remaining = this.slider.querySelector('.slider-remaining');
 
             output.value = this.level() + "%";
             output.style.left = this.level() + 1 + '%';
             if (this.level()-100 < -90){
-                    svg.style.transform = "translateX(" + (-10) + "%)"
+                svg.style.transform = "translateX(" + (-10) + "%)"
             }
             else{
                 svgs.forEach(svg => {

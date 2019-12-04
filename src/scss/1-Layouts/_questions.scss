@@ -24,7 +24,6 @@
       text-align: center;
     }
 
-  
     .question .question__item, .answers{
 
       position: absolute;
@@ -37,10 +36,19 @@
     .question{
       display: flex;
       justify-content: center;
+      align-items: center;
     }
 
     .item{
       position: static !important;
+    }
+
+    .item ul{
+      display: flex;
+    }
+
+    .item ul p{
+      width: auto !important;
     }
 
 

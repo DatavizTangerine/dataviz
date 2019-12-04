@@ -27,3 +27,25 @@ Lancer la commande `npm run prod`
 `git checkout develop`
 
 `git push origin --all`
+
+## Commande pour récupérer et push
+
+`git checkout develop`
+
+`git add .`
+
+`git commit -m ""`
+
+`git pull origin master`
+
+`git add .`
+
+`git commit -m "Merge"`
+
+`git checkout master`
+
+`git merge develop`
+
+`git checkout develop`
+
+`git push origin --all`
