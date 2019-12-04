@@ -36,8 +36,6 @@
       }
 
     }
-
-
     .question__answers{
       .btn__compare{
         font-family: $main-font;
@@ -65,5 +63,22 @@
         }
       }
     }
+  }
+
+  .second__question {
+    .question__choices {
+      .choice {
+        font-family: $main-font;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0;
+        cursor: pointer;
+      }
+    }
+
   }
 }

@@ -4,7 +4,7 @@ const timeline = () => {
     const timeline = document.querySelector('.timeline');
     const items = timeline.querySelectorAll('.timeline__item');
     const circle = document.querySelector('.percent svg #bar');
-    const bottomLine = document.querySelector('.lineWomen-bottom');
+    const bottomLine = document.querySelector('.line-bottom');
 
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
     let before = document.querySelector(parent + '.text__before');
@@ -16,7 +16,7 @@ const timeline = () => {
     after.classList.add('fadeOut');
 
     let percent = 0;
-    let percentStep = Math.round((100 / items.length)*10)/10;
+    let percentStep = Math.round((100 / items.length));
 
     let dashTotal = 500;
     let dash = 127 / items.length;
@@ -41,6 +41,10 @@ const timeline = () => {
                 circle.style.strokeDashoffset = dashTotal;
 
                 percent += percentStep;
+
+                if (percent > 100) {
+                    percent = 100;
+                }
                 percentSpan.innerHTML = percent + "%";
             }
             item.classList.add('clicked');

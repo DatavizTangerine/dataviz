@@ -9,6 +9,7 @@ import maleBtn from './components/maleBtn';
 import femaleBtn from './components/femaleBtn';
 import timelineHorizontal from './components/timelineHorizontal';
 import range from './components/range';
+import about from './components/about';
 
 import histogram from './graph/child/female/histogram';
 import lineWomen from './graph/job/lineWomen';
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     femaleBtn();
     timelineHorizontal();
     range();
+    about();
 
     histogramMen();
     histogramWomen();

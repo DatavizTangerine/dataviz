@@ -1,9 +1,12 @@
 const questions = () => {
     setQuestionsNoAnswers('female','.first__question');
-    setQuestionsNoAnswers('male','.first__question');
     setQuestionsNoAnswers('female','.second__question');
+    setQuestionsNoAnswers('male','.second__question');
 
+    setQuestionsNoAnswers('male','.first__question');
     setQuestionsNoAnswers('male','.third__question');
+    setQuestionsNoAnswers('male','.fourth__question');
+    setQuestionsNoAnswers('male','.six__question');
 
     /**
      * gestion des choix et de la reponses juste / fausse
@@ -28,7 +31,7 @@ const questions = () => {
     }
 
     /**
-     * gestion des choix et de la reponses juste / fausse
+     * pas forcément de bonne réponse
      * @param {string} questionNumber : classname of div
      */
     function setQuestionsNoAnswers(sex,questionNumber){
@@ -38,7 +41,7 @@ const questions = () => {
         const thisSection = document.querySelector(parent + ' .question__choices');
 
         const answersSection = document.querySelector(parent + ' .question__answers');
-        const bottomLine = document.querySelector('.lineWomen-bottom');
+        const bottomLine = document.querySelector('.line-bottom');
 
         choices.forEach(element => {
             element.addEventListener('click',() => {
