@@ -1,10 +1,11 @@
 const questions = () => {
     setQuestionsNoAnswers('female','.first__question');
-    setQuestionsNoAnswers('male','.first__question');
     setQuestionsNoAnswers('female','.second__question');
 
+    setQuestionsNoAnswers('male','.first__question');
     setQuestionsNoAnswers('male','.third__question');
     setQuestionsNoAnswers('male','.fourth__question');
+    setQuestionsNoAnswers('male','.sixth__question');
 
     /**
      * gestion des choix et de la reponses juste / fausse
