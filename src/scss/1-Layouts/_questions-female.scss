@@ -1,38 +1,45 @@
 .female__questions {
+  svg, img{
+    margin-bottom: 35px;
+  }
+
+  .question__answers{
+    svg, img{
+      margin-bottom: 0;
+    }
+  }
+
   .first__question {
     .question__base {
       .gabi {
         margin: 0 30px 0 45px;
       }
     }
+  }
 
-    .question__choices {
-      .choices {
+  .question__choices {
+    .choices{
+      display: flex;
+      margin-top: 105px;
+      width: 728px;
+      justify-content: space-around;
+      .choice{
         display: flex;
-        margin-top: 105px;
-        width: 728px;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        .choice {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-
-          svg {
-            margin-bottom: 35px;
-          }
-
-          p {
-            font-family: $main-font;
-            font-size: 14px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-          }
+        &:hover{
+          cursor: pointer;
         }
-      }
 
+        svg, img{
+          height: 91px;
+        }
     }
+
+  }
+
   }
 
   .second__question {
