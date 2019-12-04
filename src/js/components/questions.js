@@ -9,6 +9,7 @@ const questions = () => {
     setQuestionsNoAnswers('male','.first__question');
     setQuestionsNoAnswers('male','.third__question');
     setQuestionsNoAnswers('male','.fourth__question');
+    setQuestionsNoAnswers('male','.fifth__question');
     setQuestionsNoAnswers('male','.six__question');
 
     /**

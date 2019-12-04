@@ -31,28 +31,6 @@
   }
 }
 
-#streetMen{
-  display: none;
-  position: absolute;
-  bottom: 0;
-   .round{
-    stroke: $red;
-    stroke-width: 10;
-    stroke-linejoin: round;
-  }
-
-  text{
-    fill: black;
-    font-weight: bold;
-    font-size: 15px;
-  }
-}
-#streetWomen{
-  display: none;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 
 #mapWomenChoice{
   path{
@@ -60,6 +38,16 @@
     cursor: pointer;
     &:hover{
       fill: $red;
+      transition: all 0.5s;
+    }
+  }
+}
+#mapMenChoice{
+  path{
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover{
+      fill: $yellow;
       transition: all 0.5s;
     }
   }

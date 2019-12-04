@@ -55,7 +55,7 @@ const histogramWomen = () => {
 
     xScale0.domain(models.map(d => d.age));
     xScale1.domain(['insult', 'violence']).range([0, xScale0.bandwidth()]);
-    yScale.domain([0, d3.max(models, d => d.violence > d.insult ? d.violence : d.insult)]);
+    yScale.domain([0, 35]);
 
     var model_name = svg.selectAll(".model_name")
         .data(models)
@@ -69,7 +69,7 @@ const histogramWomen = () => {
         .enter()
         .append("rect")
         .attr("class", "bar insult")
-        .style("fill","red")
+        .style("fill","#FF614C")
         .attr("x", d => xScale1('insult'))
         .attr("y", d => yScale(d.insult))
         .attr("width", xScale1.bandwidth())
@@ -82,7 +82,7 @@ const histogramWomen = () => {
         .enter()
         .append("rect")
         .attr("class", "bar violence")
-        .style("fill","blue")
+        .style("fill","#FFB4AB")
         .attr("x", d => xScale1('violence'))
         .attr("y", d => yScale(d.violence))
         .attr("width", xScale1.bandwidth())

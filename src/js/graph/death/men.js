@@ -1,38 +1,32 @@
 import * as d3 from "d3";
 
-const histogramMen = () => {
+const menDeath = () => {
     var models = [
         {
-            "age":"18-29 ans",
-            "insult":17.1,
-            "violence":0
+            "name":"Tumeurs",
+            "men":34,
+            "women":25,
 
         },
         {
-            "age":"30-49 ans",
-            "insult":15.3,
-            "violence":1.9,
+            "name":"Accidents",
+            "men":1,
+            "women":0,
 
         },
         {
-            "age":"50-75 ans",
-            "insult":8.9,
-            "violence":0,
-
-        },
-        {
-            "age":"Ensemble",
-            "insult":13,
-            "violence":0.95,
+            "name":"Suicides",
+            "men":3,
+            "women":1,
 
         }
     ];
     models = models.map(i => {
-        i.age = i.age;
+        i.name = i.name;
         return i;
     });
 
-    var container = d3.select('#streetMen'),
+    var container = d3.select('#deathMen'),
         width = 500,
         height = 300,
         margin = {top: 30, right: 20, bottom: 30, left: 50},
@@ -53,41 +47,41 @@ const histogramMen = () => {
     var xAxis = d3.axisBottom(xScale0).tickSizeOuter(axisTicks.outerSize);
     var yAxis = d3.axisLeft(yScale).ticks(axisTicks.qty).tickSizeOuter(axisTicks.outerSize);
 
-    xScale0.domain(models.map(d => d.age));
-    xScale1.domain(['insult', 'violence']).range([0, xScale0.bandwidth()]);
-    yScale.domain([0, 35]);
+    xScale0.domain(models.map(d => d.name));
+    xScale1.domain(['men', 'women']).range([0, xScale0.bandwidth()]);
+    yScale.domain([0, 40]);
 
     var model_name = svg.selectAll(".model_name")
         .data(models)
         .enter().append("g")
         .attr("class", "model_name")
-        .attr("transform", d => `translate(${xScale0(d.age)},0)`);
+        .attr("transform", d => `translate(${xScale0(d.name)},0)`);
 
     /* Add field1 bars */
-    model_name.selectAll(".bar.insult")
+    model_name.selectAll(".bar.men")
         .data(d => [d])
         .enter()
         .append("rect")
-        .attr("class", "bar insult")
+        .attr("class", "bar men")
         .style("fill","#FFAB33")
-        .attr("x", d => xScale1('insult'))
-        .attr("y", d => yScale(d.insult))
+        .attr("x", d => xScale1('men'))
+        .attr("y", d => yScale(d.men))
         .attr("width", xScale1.bandwidth())
         .attr("height", d => {
-            return height - margin.top - margin.bottom - yScale(d.insult)
+            return height - margin.top - margin.bottom - yScale(d.men)
         });
 
-    model_name.selectAll(".bar.violence")
+    model_name.selectAll(".bar.women")
         .data(d => [d])
         .enter()
         .append("rect")
-        .attr("class", "bar violence")
-        .style("fill","#FFE091")
-        .attr("x", d => xScale1('violence'))
-        .attr("y", d => yScale(d.violence))
+        .attr("class", "bar women")
+        .style("fill","#FF614C")
+        .attr("x", d => xScale1('women'))
+        .attr("y", d => yScale(d.women))
         .attr("width", xScale1.bandwidth())
         .attr("height", d => {
-            return height - margin.top - margin.bottom - yScale(d.violence)
+            return height - margin.top - margin.bottom - yScale(d.women)
         });
 
     /* Add field2 bars */
@@ -106,4 +100,4 @@ const histogramMen = () => {
 
 }
 
-export default histogramMen;
+export default menDeath;

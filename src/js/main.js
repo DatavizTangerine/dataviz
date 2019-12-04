@@ -17,6 +17,8 @@ import lineMen from './graph/job/lineMen';
 import histogramWomen from './graph/street/women';
 import histogramMen from './graph/street/histogramMen';
 import mapWomenChoice from './graph/pension/choice/mapWomenChoice';
+import mapMenChoice from './graph/pension/choice/mapMenChoice';
+import menDeath from './graph/death/men';
 
 
 document.addEventListener("DOMContentLoaded", () =>{
@@ -40,7 +42,9 @@ document.addEventListener("DOMContentLoaded", () =>{
     histogramMen();
     histogramWomen();
     mapWomenChoice();
+    mapMenChoice();
     histogram();
     lineWomen();
     lineMen();
+    menDeath();
 });
