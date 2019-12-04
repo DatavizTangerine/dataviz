@@ -46,6 +46,7 @@ const chooseSex = () =>{
         leftLine.classList.add('hidden');
         sectionMale.classList.add('selected');
         sectionFemale.classList.add('not__selected');
+        document.documentElement.setAttribute("data-theme", "male");
         window.currentSex = 'male';
     })
     female.addEventListener('click', () => {
@@ -56,6 +57,7 @@ const chooseSex = () =>{
         leftLine.classList.add('hidden');
         sectionFemale.classList.add('selected');
         sectionMale.classList.add('not__selected');
+        document.documentElement.setAttribute("data-theme", "female");
         window.currentSex = 'female';
     })
 }

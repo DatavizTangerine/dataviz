@@ -1,4 +1,7 @@
 .male__questions{
+    svg, img{
+      margin-bottom: 35px;
+    }
     .question__base{
       .gabi{
         margin: 0 30px 0 45px;
@@ -16,23 +19,13 @@
           justify-content: center;
           align-items: center;
 
-
           &:hover{
             cursor: pointer;
           }
 
           svg, img{
             height: 91px;
-            margin-bottom: 35px;
-            p{
-            font-family: $main-font;
-            font-size: 14px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
           }
-          }
-
-
       }
 
     }
@@ -79,6 +72,5 @@
         cursor: pointer;
       }
     }
-
   }
 }
