@@ -97,25 +97,25 @@ function changeSex(){
     let btn = document.querySelector(parent + '.' + window.currentState + '__question .changeSex');
     let other_sex_parent = document.querySelector('.not__selected');
 
-    btn.addEventListener('click',() => {
-        // alert(parent);
+    // btn.addEventListener('click',() => {
+    //     // alert(parent);
 
-        console.log(parent, other_sex_parent);
+    //     console.log(parent, other_sex_parent);
 
-        document.querySelector(parent).classList.add('not__selected');
-        document.querySelector(parent).classList.add('fadeOut');
-        document.querySelector(parent).classList.remove('fadeIn');
-        document.querySelector(parent).classList.remove('selected');
+    //     document.querySelector(parent).classList.add('not__selected');
+    //     document.querySelector(parent).classList.add('fadeOut');
+    //     document.querySelector(parent).classList.remove('fadeIn');
+    //     document.querySelector(parent).classList.remove('selected');
 
-        other_sex_parent.classList.remove('not__selected');
-        other_sex_parent.classList.add('selected');
-        other_sex_parent.classList.add('fadeIn');
+    //     other_sex_parent.classList.remove('not__selected');
+    //     other_sex_parent.classList.add('selected');
+    //     other_sex_parent.classList.add('fadeIn');
 
-        let question = other_sex_parent.querySelector('.' + window.currentState + '__question');
-        question.classList.add('slideOn');
-        question.classList.remove('slideOff');
-        question.classList.remove('fadeOut');
-    })
+    //     let question = other_sex_parent.querySelector('.' + window.currentState + '__question');
+    //     question.classList.add('slideOn');
+    //     question.classList.remove('slideOff');
+    //     question.classList.remove('fadeOut');
+    // })
 }
 
 export { changeState };

@@ -1,13 +1,8 @@
-import maleQuestions from './maleQuestions';
-import femaleQuestions from './femaleQuestions';
-
 const questions = () => {
     setQuestionsNoAnswers('female','.first__question');
-    setQuestionsAnswersChoices('male','.first__question');
+    setQuestionsNoAnswers('male','.first__question');
 
-    setQuestionsAnswerUnique('male','.second__question');
-
-    // setQuestionsAnswersPercent('female','.second__question');
+    setQuestionsNoAnswers('male','.third__question');
 
     /**
      * gestion des choix et de la reponses juste / fausse
