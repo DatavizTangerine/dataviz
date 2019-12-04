@@ -4,7 +4,7 @@ const timeline = () => {
     const timeline = document.querySelector('.timeline');
     const items = timeline.querySelectorAll('.timeline__item');
     const circle = document.querySelector('.percent svg #bar');
-    const bottomLine = document.querySelector('.line-bottom');
+    const bottomLine = document.querySelector('.lineWomen-bottom');
 
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
     let before = document.querySelector(parent + '.text__before');

@@ -3,7 +3,7 @@ const onboarding = () => {
     if (btn){
         const sectionOnboarding = document.querySelector('.onboarding');
         const sectionChoose = document.querySelector('.choose__sexe');
-        const bottomLine = document.querySelector('.line-bottom');
+        const bottomLine = document.querySelector('.lineWomen-bottom');
         const leftLine = document.querySelector('.line__left');
         const rightLine = document.querySelector('.line__right');
         // const timeline = document.querySelector('.timeline');

@@ -1,29 +1,29 @@
 import * as d3 from "d3";
 
-const histogramMen = () => {
+const histogramWomen = () => {
     var models = [
         {
             "age":"18-29 ans",
-            "insult":17.1,
-            "violence":0
+            "insult":20.4,
+            "violence":4.6,
 
         },
         {
             "age":"30-49 ans",
-            "insult":15.3,
-            "violence":1.9,
+            "insult":15.8,
+            "violence":1.7,
 
         },
         {
             "age":"50-75 ans",
-            "insult":8.9,
+            "insult":8.3,
             "violence":0,
 
         },
         {
             "age":"Ensemble",
-            "insult":13,
-            "violence":0.95,
+            "insult":13.4,
+            "violence":1.8,
 
         }
     ];
@@ -32,9 +32,9 @@ const histogramMen = () => {
         return i;
     });
 
-    var container = d3.select('#streetMen'),
+    var container = d3.select('#streetWomen'),
         width = 500,
-        height = 500,
+        height = 300,
         margin = {top: 30, right: 20, bottom: 30, left: 50},
         barPadding = .2,
         axisTicks = {qty: 5, outerSize: 0, dateFormat: '%m-%d'};
@@ -67,17 +67,16 @@ const histogramMen = () => {
     model_name.selectAll(".bar.insult")
         .data(d => [d])
         .enter()
-        .append("polygon")
-        .attr("fill", "#FF614C")
-        .attr("class", "round")
-        .attr("points",function(d) {
-            var left = xScale1('insult') - 10;
-            var top = yScale(d.insult);
-            var bottom = height - 5;
-            return left + ',' + bottom + ' '
-                + (left + (xScale1.bandwidth()/2) - 10) + ',' + top + ' '
-                + (left + xScale1.bandwidth() + (2 * (-10))) + ',' + bottom;
-        })
+        .append("rect")
+        .attr("class", "bar insult")
+        .style("fill","red")
+        .attr("x", d => xScale1('insult'))
+        .attr("y", d => yScale(d.insult))
+        .attr("width", xScale1.bandwidth())
+        .attr("height", d => {
+            return height - margin.top - margin.bottom - yScale(d.insult)
+        });
+
     model_name.selectAll(".bar.violence")
         .data(d => [d])
         .enter()
@@ -107,4 +106,4 @@ const histogramMen = () => {
 
 }
 
-export default histogramMen;
+export default histogramWomen;

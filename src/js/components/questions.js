@@ -38,7 +38,7 @@ const questions = () => {
         const thisSection = document.querySelector(parent + ' .question__choices');
 
         const answersSection = document.querySelector(parent + ' .question__answers');
-        const bottomLine = document.querySelector('.line-bottom');
+        const bottomLine = document.querySelector('.lineWomen-bottom');
 
         choices.forEach(element => {
             element.addEventListener('click',() => {

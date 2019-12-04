@@ -11,7 +11,9 @@ import timelineHorizontal from './components/timelineHorizontal';
 import range from './components/range';
 
 import histogram from './graph/child/female/histogram';
-import line from './graph/job/line';
+import lineWomen from './graph/job/lineWomen';
+import lineMen from './graph/job/lineMen';
+import histogramWomen from './graph/street/women';
 import histogramMen from './graph/street/histogramMen';
 import map from './graph/pension/map';
 
@@ -34,7 +36,9 @@ document.addEventListener("DOMContentLoaded", () =>{
     range();
 
     histogramMen();
+    histogramWomen();
     map();
     histogram();
-    line();
+    lineWomen();
+    lineMen();
 });
