@@ -4,6 +4,7 @@ const questions = () => {
     setQuestionsNoAnswers('female','.second__question');
 
     setQuestionsNoAnswers('male','.third__question');
+    setQuestionsNoAnswers('male','.fourth__question');
 
     /**
      * gestion des choix et de la reponses juste / fausse
