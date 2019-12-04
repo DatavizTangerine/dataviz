@@ -5,7 +5,7 @@ const questions = () => {
     setQuestionsNoAnswers('male','.first__question');
     setQuestionsNoAnswers('male','.third__question');
     setQuestionsNoAnswers('male','.fourth__question');
-    setQuestionsNoAnswers('male','.sixth__question');
+    setQuestionsNoAnswers('male','.six__question');
 
     /**
      * gestion des choix et de la reponses juste / fausse
@@ -30,7 +30,7 @@ const questions = () => {
     }
 
     /**
-     * gestion des choix et de la reponses juste / fausse
+     * pas forcément de bonne réponse
      * @param {string} questionNumber : classname of div
      */
     function setQuestionsNoAnswers(sex,questionNumber){
