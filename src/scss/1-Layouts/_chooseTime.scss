@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 
     &:after{
       content: '';
@@ -59,4 +60,27 @@
       }
     }
   }
+
+  .timeline__horizontal__values{
+    width: 670px;
+    height: 1px;
+    position: absolute;
+    bottom: 19%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .timeline__line{
+      background-color: $red;
+      width: 1px;
+      height: 20px;
+    }
+    p{
+      top:0 !important;
+      font-weight: normal !important;
+      font-size: 18px !important;
+      color: $red;
+    }
+  }
+
 }
