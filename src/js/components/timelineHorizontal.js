@@ -15,10 +15,12 @@ const timelineHorizontal = () => {
             chooseTime.classList.remove('fadeIn');
             chooseTime.classList.add('fadeOut');
             percent.classList.add('fadeIn');
-            selected.classList.add('fadeIn');
             bottomLine.classList.remove('hidden');
             topLine.classList.remove('hidden');
             timeline.classList.add('fadeIn');
+
+            window.currentState = item.getAttribute('data-state');
+            window.currentNumber= item.getAttribute('data-number');
 
             questionsScreens.changeState(item);
         })

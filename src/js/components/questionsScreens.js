@@ -14,7 +14,11 @@ const changeState = (item) => {
 }
 
 function newState(){
-    let question = document.querySelector('.' + window.currentSex + '__questions .' + window.currentState + '__question');
+    let parent = document.querySelector('.' + window.currentSex + '__questions');
+    let question = parent.querySelector('.' + window.currentState + '__question');
+
+    parent.classList.add('fadeIn');
+
     question.classList.add('slideOn');
     question.classList.remove('slideOff');
     question.classList.remove('fadeOut');
