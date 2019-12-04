@@ -3,9 +3,11 @@ const changeState = (item) => {
     let oldNumber = window.currentNumber;
     window.currentNumber = item.getAttribute('data-number');
     window.currentState = item.getAttribute('data-State');
+
     hideAllStates();
     newState();
     displayState(oldNumber);
+
     screensEvent();
     hideAllScreens();
     showFirstScreen();
@@ -44,27 +46,21 @@ const displayState = (oldNumber) => {
 }
 
 function screensEvent(){
-    console.log('=========');
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
     let screens = document.querySelector(parent).children;
 
-    //boarding to base / choices
-    let interval = 5000;
-    setTimeout(() => {
-        screens[0].classList.remove('active__screen');
-        screens[0].classList.add('fadeOut');
-        screens[1].classList.remove('fadeOut');
-        screens[1].classList.add('active__screen');
-        
-    },interval);
-
-    if(screens[1].getAttribute('class').match(/base/) != null){
-        setTimeout(() => {
-            screens[1].classList.remove('active__screen');
-            screens[1].classList.add('fadeOut');
-            screens[2].classList.remove('fadeOut');
-            screens[2].classList.add('active__screen');
-        },interval*2);
+    // Next screen jusqu'à la question
+    let increment = 0;
+    document.body.onkeyup = function(e){
+        if(increment < screens.length-2 && e.keyCode == 32){
+            screens[increment].classList.remove('active__screen');
+            screens[increment].classList.add('fadeOut');
+            screens[increment].classList.remove('fadeIn');
+            increment++;
+            screens[increment].classList.remove('fadeOut');
+            screens[increment].classList.add('fadeIn');
+            screens[increment].classList.add('active__screen');
+        }
     }
 }
 
@@ -74,14 +70,19 @@ function hideAllScreens()
     let screens = document.querySelector(parent).children;
     for(let i = 0; i < screens.length; i++){
         screens[i].classList.add('fadeOut');
+        screens[i].classList.remove('fadeIn');
     }
     screens[0].classList.add('active__screen');
+    screens[0].classList.add('fadeIn');
 }
 
 function showFirstScreen(){
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
     let intro = document.querySelector(parent + ' .active__screen');
+
     intro.classList.remove('fadeOut');
+    intro.classList.add('active__screen');
+    intro.classList.add('fadeIn');
 }
 
 export {changeState};

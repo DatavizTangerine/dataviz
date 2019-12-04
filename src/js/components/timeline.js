@@ -32,9 +32,6 @@ const timeline = () => {
 
             questionsScreens.changeState(item);
 
-            // Jauge
-
-
             if (!item.classList.contains('clicked')){
                 dashTotal -= dash;
                 circle.style.strokeDashoffset = dashTotal;
