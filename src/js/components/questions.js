@@ -2,11 +2,11 @@ import maleQuestions from './maleQuestions';
 import femaleQuestions from './femaleQuestions';
 
 const questions = () => {
-
+    setQuestionsAnswerUnique('female','.first__question');
     setQuestionsAnswersChoices('male','.first__question');
+
     setQuestionsAnswerUnique('male','.second__question');
 
-    setQuestionsAnswersChoices('female','.first__question');
     // setQuestionsAnswersPercent('female','.second__question');
 
     /**
@@ -27,6 +27,21 @@ const questions = () => {
                     right_answer.style.opacity = '0';
                     wrong_answer.style.opacity = '1';
                 }
+            })
+        });
+    }
+
+    /**
+     * gestion des choix et de la reponses juste / fausse
+     * @param {string} questionNumber : classname of div
+     */
+    function setQuestionsNoAnswers(sex,questionNumber){
+        const parent = '.' + sex + '__questions ' + questionNumber;
+        const choices = document.querySelectorAll(parent + ' .choice');
+
+        choices.forEach(element => {
+            element.addEventListener('click',() => {
+
             })
         });
     }
