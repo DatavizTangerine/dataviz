@@ -2,10 +2,11 @@ import * as questionsScreens from './questionsScreens';
 
 const timelineHorizontal = () => {
     const timeline = document.querySelector('.timeline');
+    const timeline_values = document.querySelector('.timeline__values');
     const items = document.querySelectorAll('.timeline__horizontal .timeline__item');
+    const values = document.querySelectorAll('.timeline__horizontal__values .timeline__value');
     const chooseTime = document.querySelector('.choose__time');
     const percent = document.querySelector('.percent');
-    // const selected = document.querySelector('.female__questions');
     const bottomLine = document.querySelector('.line-bottom');
     const topLine = document.querySelector('.line-top');
 
@@ -21,6 +22,17 @@ const timelineHorizontal = () => {
     circle.style.strokeDashoffset = dashTotal;
 
     items.forEach(item => {
+
+        //affichage value hover
+        item.addEventListener('mouseover',() => {
+            values[item.getAttribute('data-id')].classList.remove('fadeOut');
+            values[item.getAttribute('data-id')].classList.add('fadeIn');
+        })
+        item.addEventListener('mouseout',() => {
+            values[item.getAttribute('data-id')].classList.add('fadeOut');
+            values[item.getAttribute('data-id')].classList.remove('fadeIn');
+        })
+
         item.addEventListener('click', () => {
             chooseTime.classList.remove('fadeIn');
             chooseTime.classList.add('fadeOut');
@@ -28,6 +40,7 @@ const timelineHorizontal = () => {
             bottomLine.classList.remove('hidden');
             topLine.classList.remove('hidden');
             timeline.classList.add('fadeIn');
+            timeline_values.classList.add('fadeIn');
 
             window.currentState = item.getAttribute('data-state');
             window.currentNumber= item.getAttribute('data-number');

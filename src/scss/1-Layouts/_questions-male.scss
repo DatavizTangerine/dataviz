@@ -29,33 +29,6 @@
       }
 
     }
-    .question__answers{
-      .btn__compare{
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        background-color: $red;
-        width: 340px;
-        padding: 13px 16px;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        svg{
-          margin-left: 12px;
-        }
-      }
-
-      .item{
-        img{
-          display: block;
-          margin: 0 auto;
-        }
-      }
-    }
   }
 
   .second__question {
