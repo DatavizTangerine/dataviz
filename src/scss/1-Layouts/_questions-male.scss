@@ -1,4 +1,20 @@
 .male__questions{
+  &.selected{
+    .indicator{
+      animation: hidden 8s forwards;
+    }
+  }
+
+  @keyframes hidden {
+    90%{
+      opacity: 1;
+      visibility: visible;
+    }
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
     svg, img{
       margin-bottom: 35px;
     }
@@ -36,18 +52,22 @@
       font-family: $main-font;
       font-style: normal;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 10px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: #FFFFFF;
       background-color: $yellow;
-      width: 340px;
       padding: 13px 16px;
       border-radius: 50px;
       display: flex;
       align-items: center;
       svg{
+      margin-bottom: 0 !important;
         margin-left: 12px;
+      }
+
+      &:hover{
+        cursor: pointer;
       }
     }
 

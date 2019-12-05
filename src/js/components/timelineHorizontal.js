@@ -1,4 +1,4 @@
-import * as questionsScreens from './questionsScreens';
+import * as questionsScreens from '../Layouts/questionsScreens';
 
 const timelineHorizontal = () => {
     const timeline = document.querySelector('.timeline');

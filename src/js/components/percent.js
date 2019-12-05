@@ -2,6 +2,14 @@ const percent = () => {
     const numberOfElement = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const initialRender = numberOfElement.slice(0, 17); // TAKIT: Modified to test
 
+    const percent = document.querySelector('.percent');
+    const conclusion = document.querySelector('.conclusion');
+
+    percent.addEventListener('click', () => {
+        conclusion.classList.remove('fadeOut');
+        conclusion.classList.add('fadeIn');
+        percent.classList.add('fadeOut');
+    })
 
     function renderAngle(data) {
         const angles = [120];

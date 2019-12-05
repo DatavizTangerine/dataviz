@@ -60,7 +60,7 @@ function screensEvent() {
     // Next screen jusqu'à la question
     let increment = 0;
     document.body.onkeyup = function (e) {
-        if (increment < screens.length - 2 && e.keyCode == 32) {
+        if (increment < screens.length - 1 && e.keyCode == 32) {
             screens[increment].classList.remove('active__screen');
             screens[increment].classList.add('fadeOut');
             screens[increment].classList.remove('fadeIn');
@@ -99,9 +99,7 @@ function changeSex(){
     let current_sex_parent = document.querySelector('.selected');
     let other_sex_parent = document.querySelector('.not__selected');
 
-    btn.addEventListener('click',() => {
-        console.log(current_sex_parent, other_sex_parent);
-    })
+
 }
 
 export { changeState };

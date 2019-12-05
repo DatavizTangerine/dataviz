@@ -1,0 +1,16 @@
+{
+  "baby": {
+    "datas": [
+      {
+        "name": "35%",
+        "value": 35,
+        "color": "#FFAB33"
+      },
+      {
+        "name": "50%",
+        "value": 50,
+        "color": "#FF614C"
+      }
+    ]
+  }
+}

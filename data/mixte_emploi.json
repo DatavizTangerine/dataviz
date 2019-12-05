@@ -1,6 +1,7 @@
 [
   {
     "name": "Men",
+    "color": "#FFAB33",
     "values": [
       {"date": "2015", "percent": "75.3 "},
       {"date": "2016", "percent": "75.4 "},
@@ -10,6 +11,7 @@
   },
   {
     "name": "Women",
+    "color": "#FF614C",
     "values": [
       {"date": "2015", "percent": "67.3 "},
       {"date": "2016", "percent": "67.6"},

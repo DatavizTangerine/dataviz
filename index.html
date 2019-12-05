@@ -55,7 +55,6 @@
             <div class="timeline__item" data-id="2" data-state="third" data-number="3"></div>
             <div class="timeline__item" data-id="3" data-state="fourth" data-number="4"></div>
             <div class="timeline__item" data-id="4" data-state="fifth" data-number="5"></div>
-            <div class="timeline__item" data-id="5" data-state="six" data-number="6"></div>
       </div>
       <div class="timeline__values">
             <div class="timeline__value fadeOut">
@@ -72,9 +71,6 @@
             </div>
             <div class="timeline__value fadeOut">
                   <p>70 ans</p>
-            </div>
-            <div class="timeline__value fadeOut">
-                  <p>mort</p>
             </div>
       </div>
 
@@ -230,7 +226,7 @@
 
       <section class="choose__time">
             <p>Quelle période de la vie veux-tu découvrir ?</p>
-            <svg width="133" height="224" viewBox="0 0 133 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="gabi_time" width="133" height="224" viewBox="0 0 133 224" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50.7641 186.274H86.6692C86.6692 186.274 98.5564 169.693 98.5564 147.96C98.5564 119.996 132.951 109.645 132.951 70.5948C133 30.0727 101.528 0.0490583 66.5487 0H66.5H66.4513C31.4718 0.0490583 0 30.0727 0 70.5948C0 109.645 34.3949 119.996 34.3949 147.96C34.3949 169.693 50.7641 186.274 50.7641 186.274Z"
                         fill="#333333" />
                   <path d="M2.72826 171.213C0.584672 156.496 28.3052 146.733 31.7154 142.956C36.2462 138.001 43.8949 137.707 48.7667 142.22C53.6872 146.782 55.4898 152.915 51.0077 157.82C49.4001 159.685 4.92057 185.931 2.72826 171.213Z"
@@ -263,8 +259,6 @@
                   </div>
                   <div class="timeline__item" data-id="4" data-state="fifth" data-number="5">
                   </div>
-                  <div class="timeline__item" data-id="5" data-state="six" data-number="6">
-                  </div>
             </div>
             <div class="timeline__horizontal__values">
                   <div class="timeline__value fadeOut">
@@ -287,19 +281,55 @@
                         <div class="timeline__line"></div>
                         <p>70 ans</p>
                   </div>
-                  <div class="timeline__value fadeOut">
-                        <div class="timeline__line"></div>
-                        <p>mort</p>
-                  </div>
             </div>
       </section>
+
+      <div class="first__question-compare compare question__item fadeOut">
+            <p class="text">Les femmes ont effectivement tendance à être moins choisies. L’une des principales causes est qu’elles auront plus de chance de partir en congé maternité.</p>
+            <div id="babyMixte"></div>
+
+            <span class="btn__compare btnBack">Revoir les données
+                  <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.0309 8.80653C17.0311 7.26912 16.5894 5.76406 15.7584 4.47057C14.9274 3.17709 13.7421 2.14968 12.3437 1.5107C10.9453 0.871726 9.39275 0.648109 7.87088 0.866479C6.349 1.08485 4.92195 1.736 3.75968 2.7424C2.5974 3.7488 1.74888 5.06803 1.31515 6.54299C0.881426 8.01795 0.880777 9.58648 1.31328 11.0618C1.74579 12.5371 2.59322 13.857 3.75466 14.8644C4.9161 15.8718 6.34261 16.5241 7.86431 16.7437V17.9727H5.57267V20.2643H7.86431V23.7016H10.156V20.2643H12.4476V17.9727H10.156V16.7437C12.0638 16.466 13.808 15.5114 15.0702 14.0542C16.3324 12.5969 17.0283 10.7344 17.0309 8.80653ZM3.28102 8.80653C3.28102 7.67346 3.61703 6.56585 4.24655 5.62374C4.87607 4.68163 5.77084 3.94735 6.8177 3.51374C7.86455 3.08014 9.01648 2.96669 10.1278 3.18774C11.2392 3.40879 12.26 3.95441 13.0612 4.7556C13.8624 5.5568 14.4081 6.57759 14.6292 7.68888C14.8502 8.80017 14.7368 9.95205 14.3031 10.9989C13.8695 12.0457 13.1352 12.9404 12.1931 13.5699C11.2509 14.1994 10.1432 14.5354 9.01013 14.5354C7.4912 14.5337 6.03497 13.9296 4.96092 12.8556C3.88688 11.7816 3.28273 10.3254 3.28102 8.80653Z"
+                              fill="white" />
+                  </svg>
+            </span>
+      </div>
+            <div class="third__question-compare compare question__item fadeOut">
+                  <p class="text">Malheureusement c’est un phénomène assez répandu. Jean-Kevin à beau se justifier en disant qu’il cherchait seulement à draguer, ce n’est jamais agréable de se faire aborder de cette manière. </p>
+                  <div class="graph" >
+                        <div id="streetMixteMen"></div>
+                        <div id="streetMixteWomen"></div>
+                  </div>
+
+                  <span class="btn__compare btnBack">Revoir les données
+                        <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                              <path d="M17.0309 8.80653C17.0311 7.26912 16.5894 5.76406 15.7584 4.47057C14.9274 3.17709 13.7421 2.14968 12.3437 1.5107C10.9453 0.871726 9.39275 0.648109 7.87088 0.866479C6.349 1.08485 4.92195 1.736 3.75968 2.7424C2.5974 3.7488 1.74888 5.06803 1.31515 6.54299C0.881426 8.01795 0.880777 9.58648 1.31328 11.0618C1.74579 12.5371 2.59322 13.857 3.75466 14.8644C4.9161 15.8718 6.34261 16.5241 7.86431 16.7437V17.9727H5.57267V20.2643H7.86431V23.7016H10.156V20.2643H12.4476V17.9727H10.156V16.7437C12.0638 16.466 13.808 15.5114 15.0702 14.0542C16.3324 12.5969 17.0283 10.7344 17.0309 8.80653ZM3.28102 8.80653C3.28102 7.67346 3.61703 6.56585 4.24655 5.62374C4.87607 4.68163 5.77084 3.94735 6.8177 3.51374C7.86455 3.08014 9.01648 2.96669 10.1278 3.18774C11.2392 3.40879 12.26 3.95441 13.0612 4.7556C13.8624 5.5568 14.4081 6.57759 14.6292 7.68888C14.8502 8.80017 14.7368 9.95205 14.3031 10.9989C13.8695 12.0457 13.1352 12.9404 12.1931 13.5699C11.2509 14.1994 10.1432 14.5354 9.01013 14.5354C7.4912 14.5337 6.03497 13.9296 4.96092 12.8556C3.88688 11.7816 3.28273 10.3254 3.28102 8.80653Z"
+                                    fill="white" />
+                        </svg>
+                  </span>
+            </div>
+      <div class="fourth__question-compare compare question__item fadeOut">
+                  <p class="text">Les femmes ont effectivement tendance à être moins choisies. L’une des principales causes est qu’elles auront plus de chance de partir en congé maternité.</p>
+            <div id="lineAll"></div>
+
+            <span class="btn__compare btnBack">Revoir les données
+                  <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.0309 8.80653C17.0311 7.26912 16.5894 5.76406 15.7584 4.47057C14.9274 3.17709 13.7421 2.14968 12.3437 1.5107C10.9453 0.871726 9.39275 0.648109 7.87088 0.866479C6.349 1.08485 4.92195 1.736 3.75968 2.7424C2.5974 3.7488 1.74888 5.06803 1.31515 6.54299C0.881426 8.01795 0.880777 9.58648 1.31328 11.0618C1.74579 12.5371 2.59322 13.857 3.75466 14.8644C4.9161 15.8718 6.34261 16.5241 7.86431 16.7437V17.9727H5.57267V20.2643H7.86431V23.7016H10.156V20.2643H12.4476V17.9727H10.156V16.7437C12.0638 16.466 13.808 15.5114 15.0702 14.0542C16.3324 12.5969 17.0283 10.7344 17.0309 8.80653ZM3.28102 8.80653C3.28102 7.67346 3.61703 6.56585 4.24655 5.62374C4.87607 4.68163 5.77084 3.94735 6.8177 3.51374C7.86455 3.08014 9.01648 2.96669 10.1278 3.18774C11.2392 3.40879 12.26 3.95441 13.0612 4.7556C13.8624 5.5568 14.4081 6.57759 14.6292 7.68888C14.8502 8.80017 14.7368 9.95205 14.3031 10.9989C13.8695 12.0457 13.1352 12.9404 12.1931 13.5699C11.2509 14.1994 10.1432 14.5354 9.01013 14.5354C7.4912 14.5337 6.03497 13.9296 4.96092 12.8556C3.88688 11.7816 3.28273 10.3254 3.28102 8.80653Z"
+                              fill="white" />
+                  </svg>
+            </span>
+      </div>
 
       <section class="male__questions questions">
             <svg class="sign" width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M54.3096 18.4883L61 17.1501L58.5876 5.08871C58.4556 4.42823 58.1309 3.82163 57.6547 3.34535C57.1784 2.86908 56.5718 2.54444 55.9113 2.41237L43.8499 0L42.5117 6.69041L48.3224 7.85289L38.1812 17.994C33.346 14.3786 27.3207 12.7288 21.3181 13.3766C15.3155 14.0245 9.78101 16.9219 5.82855 21.4859C1.8761 26.0498 -0.200977 31.9414 0.0153477 37.975C0.231672 44.0086 2.72534 49.7364 6.99449 54.0055C11.2636 58.2747 16.9914 60.7683 23.025 60.9846C29.0586 61.201 34.9502 59.1239 39.5141 55.1715C44.0781 51.219 46.9755 45.6845 47.6234 39.6819C48.2712 33.6793 46.6214 27.654 43.006 22.8188L53.1471 12.6776L54.3096 18.4883ZM35.9437 49.1792C33.1532 51.9696 29.4814 53.7062 25.554 54.093C21.6267 54.4797 17.6867 53.4928 14.4054 51.3003C11.1242 49.1078 8.70464 45.8453 7.55912 42.0689C6.41359 38.2924 6.61293 34.2356 8.12318 30.5897C9.63344 26.9437 12.3611 23.9342 15.8416 22.074C19.322 20.2137 23.3397 19.6178 27.2102 20.3877C31.0808 21.1577 34.5646 23.2458 37.0681 26.2965C39.5716 29.3471 40.9399 33.1714 40.9398 37.1177C40.9461 39.3587 40.5077 41.5786 39.6501 43.649C38.7925 45.7193 37.5327 47.599 35.9437 49.1792Z"
                         fill="#FFAB33" />
             </svg>
-
+             <p class="indicator">Appuyer sur espace pour passer</p>
             <div class="first__question question">
                   <div class="question__onboarding question__item">
                         <div class="forms item">
@@ -606,7 +636,8 @@
                         </div>
 
                         <div class="item">
-                              <div id="menRadial"></div>
+                              <div id="menRadial">
+                              </div>
                         </div>
                   </div>
             </div>
@@ -684,11 +715,11 @@
                   <div class="question__onboarding question__item">
                         <div class="text__before item">
                               <p class="text">Gabi s’imagine alors à quoi ressemblera sa vie à 25 ans, à la fin de ses
-                                    études :</p>
+                                    études : </p>
                         </div>
                         <div class="text__after item">
                               <p class="text">Gabi se souvient alors de ses 25 ans, lorsqu’il venait de terminer ses
-                                    études :/p>
+                                    études : </p>
                         </div>
                         <img class="item" src="dist/img/Group 868.png">
                         <div class="item">
@@ -721,43 +752,20 @@
                       <div class="item">
                           <div id="lineMen"></div>
                       </div>
+
+                        <div class="item">
+                              <p class="btn__compare">Compare avec le sexe opposé
+                                    <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M17.0309 8.80653C17.0311 7.26912 16.5894 5.76406 15.7584 4.47057C14.9274 3.17709 13.7421 2.14968 12.3437 1.5107C10.9453 0.871726 9.39275 0.648109 7.87088 0.866479C6.349 1.08485 4.92195 1.736 3.75968 2.7424C2.5974 3.7488 1.74888 5.06803 1.31515 6.54299C0.881426 8.01795 0.880777 9.58648 1.31328 11.0618C1.74579 12.5371 2.59322 13.857 3.75466 14.8644C4.9161 15.8718 6.34261 16.5241 7.86431 16.7437V17.9727H5.57267V20.2643H7.86431V23.7016H10.156V20.2643H12.4476V17.9727H10.156V16.7437C12.0638 16.466 13.808 15.5114 15.0702 14.0542C16.3324 12.5969 17.0283 10.7344 17.0309 8.80653ZM3.28102 8.80653C3.28102 7.67346 3.61703 6.56585 4.24655 5.62374C4.87607 4.68163 5.77084 3.94735 6.8177 3.51374C7.86455 3.08014 9.01648 2.96669 10.1278 3.18774C11.2392 3.40879 12.26 3.95441 13.0612 4.7556C13.8624 5.5568 14.4081 6.57759 14.6292 7.68888C14.8502 8.80017 14.7368 9.95205 14.3031 10.9989C13.8695 12.0457 13.1352 12.9404 12.1931 13.5699C11.2509 14.1994 10.1432 14.5354 9.01013 14.5354C7.4912 14.5337 6.03497 13.9296 4.96092 12.8556C3.88688 11.7816 3.28273 10.3254 3.28102 8.80653Z"
+                                                fill="white" />
+                                    </svg>
+                              </p>
+                              <img src="dist/img/gabi-compare.png" alt="">
+                        </div>
                   </div>
             </div>
             <div class="fifth__question question">
-                  <div class="question__onboarding question__item">
-                        <div class="text__before item">
-                              <p class="text">Gabi pense à l’avenir, un avenir très lointain :</p>
-                        </div>
-                        <div class="text__after item">
-                              <p class="text">Gabi se rappelle de ses dernières années sur terre :</p>
-                        </div>
-                        <img class="item" src="dist/img/Group 869.png">
-                        <div class="item">
-                              <p class="text">Après des années de dur labeur, Gabi a bien mérité un temps de répit : sa
-                                    retraite. Il en profite pour élever des poules et des dindons.</p>
-                        </div>
-                  </div>
-                  <div class="question__choices question__item fadeOut">
-                        <div class="item">
-                              <p class="text">Selon-toi quelle(s) région(s) est/sont le plus marquée(s) par les
-                                    inégalités hommes-femmes ?</p>
-                        </div>
-                        <div class="item choices">
-                              <div id="mapMenChoice"></div>
-                        </div>
-                        <p class="Choice">Entrer</p>
-                  </div>
-                  <div class="question__answers question__item fadeOut">
-                        <div class="item answers">
-                              <p class="text">Le Grand Est est la région française où les inégalités de revenus à la
-                                    retraite sont les plus marqués. Dans ces régions, l’écart moyen des pensions des
-                                    hommes et des femmes est de 33,5%. Tu vois, les inégalités peuvent perdurer tout au
-                                    long de la vie.
-                              </p>
-                        </div>
-                  </div>
-            </div>
-            <div class="six__question question">
                   <div class="question__onboarding question__item">
                         <img class="item" src="dist/img/Group 835.png">
                         <div class="text__before item">
@@ -804,6 +812,7 @@
                   <path d="M50.1923 24.7838C50.1929 20.0337 48.8282 15.3835 46.2607 11.3869C43.6933 7.3904 40.0313 4.216 35.7109 2.24174C31.3904 0.267478 26.5936 -0.423439 21.8916 0.251264C17.1896 0.925967 12.7806 2.93786 9.18965 6.04735C5.59869 9.15684 2.97709 13.2329 1.63706 17.7901C0.297021 22.3473 0.295017 27.1937 1.63128 31.752C2.96755 36.3103 5.58577 40.3886 9.17416 43.501C12.7625 46.6135 17.1699 48.629 21.8713 49.3076V53.1048H14.7911V60.1851H21.8713V70.8055H28.9516V60.1851H36.0318V53.1048H28.9516V49.3076C34.8459 48.4496 40.235 45.5001 44.1347 40.9976C48.0343 36.4952 50.1844 30.7403 50.1923 24.7838ZM7.71081 24.7838C7.71081 21.283 8.74893 17.8607 10.6939 14.9499C12.6389 12.039 15.4033 9.7703 18.6377 8.43058C21.8721 7.09086 25.4311 6.74033 28.8647 7.42331C32.2982 8.10629 35.4522 9.79212 37.9277 12.2676C40.4031 14.7431 42.089 17.897 42.772 21.3306C43.4549 24.7642 43.1044 28.3232 41.7647 31.5576C40.425 34.7919 38.1562 37.5564 35.2454 39.5014C32.3345 41.4463 28.9123 42.4845 25.4114 42.4845C20.7186 42.4792 16.2194 40.6126 12.901 37.2942C9.58265 33.9759 7.71608 29.4767 7.71081 24.7838Z"
                         fill="#FF614C" style="mix-blend-mode:darken" />
             </svg>
+            <p class="indicator">Appuyer sur espace pour passer</p>
             <div class="first__question question">
                   <div class="question__onboarding question__item">
                         <div class="forms">
@@ -1525,56 +1534,7 @@
                   </div>
                   <p class="choice">Entrer</p>
             </div>
-            <div class="fifth__question question fadeOut slideOff">
-                  <div class="question__onboarding question__item">
-                        <div class="text__before">
-                              <p class="text">Gabi pense à l’avenir, un avenir très lointain :
-                              </p>
-                        </div>
-                        <div class="text__after">
-                              <p class="text">Gabi se rappelle de ses dernières années sur terre :</p>
-                        </div>
-                        <div class="item">
-                              <img src="dist/img/retraite-women.png" alt="">
-                        </div>
-                        <div class="item">
-                              <p class="text">
-                                    Après des années de dur labeur, Gabi a bien mérité un temps de répit.
-                                    Elle profite de sa retraite pour passer du temps avec ses 14 chats et ses poules.
-                              </p>
-                        </div>
-
-                  </div>
-                  <div class="question__choices question__item fadeOut">
-                        <div class="item">
-                              <p class="text">Selon-toi quelle(s) région(s) est/sont le plus marquée(s) par les
-                                    inégalités hommes-femmes ?</p>
-                        </div>
-                        <div class="item choices">
-                              <div id="mapWomenChoice"></div>
-                        </div>
-                        <p class="Choice">Entrer</p>
-                  </div>
-                  <div class="question__answers question__item fadeOut">
-                        <div class="item answers">
-                              <p class="text">
-                                    Le Grand Est est la région française où les inégalités de revenus à la retraite sont
-                                    les plus marqués. Dans ces régions, l’écart moyen des pensions des hommes et des
-                                    femmes est de 33,5%. Tu vois, les inégalités peuvent perdurer tout au long de la
-                                    vie.
-                              </p>
-                        </div>
-
-                        <div class="item">
-                              <div id="graphtdsdsfsfds">
-
-                              </div>
-                        </div>
-
-                  </div>
-                  <p class="choice">Entrer</p>
-            </div>
-            <div class="six__question  question fadeOut slideOff">
+             <div class="fifth__question  question fadeOut slideOff">
                   <div class="question__onboarding question__item">
                         <div class="text__before">
                               <p class="text"></p>
@@ -1594,32 +1554,31 @@
                         </div>
 
                   </div>
-                  <div class="question__choices question__item fadeOut">
-                        <div class="item">
-                              <p class="text">Selon-vous, combien de femmes depuis le début de l’année 2019 sont mortes
-                                    tuées par leur conjoint ? </p>
-                        </div>
-                        <div class="item choices">
-                              <p>range fémnicide</p>
-                        </div>
-                  </div>
-                  <div class="question__answers question__item fadeOut">
-                        <div class="item answers">
-                              <p class="text">
-                                    121 femmes ont été tuées par leur partenaire depuis le début de cette année, et le
-                                    chiffre continue d’augmenter. 121 femmes, de toute la France, de toutes les origines
-                                    et de tous les âges.
-                              </p>
-                        </div>
+                   <div class="question__answers question__item fadeOut">
+                         <div class="item answers">
+                               <p class="text">
+                                     121 femmes ont été tuées par leur partenaire depuis le début de cette année, et le
+                                     chiffre continue d’augmenter. 121 femmes, de toute la France, de toutes les origines
+                                     et de tous les âges.
+                               </p>
+                         </div>
 
-                        <div class="item">
-                              <div id="graphdsdsdgs">
+                         <div class="item answers__deathWomen">
+                               <p class="legend">Nombre de féminicides en France chaque année</p>
+                               <div class="years">
+                                     <p data-death="148">2006</p>
+                                     <p data-death="157">2010</p>
+                                     <p data-death="134">2014</p>
+                                     <p data-death="121">2018</p>
+                               </div>
 
-                              </div>
-                        </div>
-                  </div>
-                  <p class="choice">Entrer</p>
-            </div>
+                               <div class="items__cross">
+
+                               </div>
+                         </div>
+
+                   </div>
+             </div>
       </section>
 
       <div class="conclusion fadeOut">

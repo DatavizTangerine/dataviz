@@ -1,4 +1,4 @@
-import * as questionsScreens from './questionsScreens';
+import * as questionsScreens from '../Layouts/questionsScreens';
 
 const timeline = () => {
     const timeline = document.querySelector('.timeline');
@@ -55,7 +55,7 @@ const timeline = () => {
 
                 percent += percentStep;
 
-                if (percent > 100) {
+                if (percent >= 100) {
                     percent = 100;
                     percentBtn.classList.add('show__conclusion');
                 }

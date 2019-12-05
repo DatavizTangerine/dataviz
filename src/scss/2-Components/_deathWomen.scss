@@ -1,0 +1,49 @@
+.answers__deathWomen{
+  .legend{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $lightGrey;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .years{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    p{
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: $lightGrey;
+      opacity: 0.5;
+      transition: all 0.8s;
+      &.selected{
+        transition: all 0.8s;
+        opacity: 1;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .items__cross{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    span{
+      margin: 5px 6px;
+    }
+  }
+}

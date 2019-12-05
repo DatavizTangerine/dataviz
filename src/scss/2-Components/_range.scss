@@ -69,6 +69,18 @@
     }
   }
 
+  .death{
+    .crossRange{
+      .cross{
+        &.hidden{
+          transition: 0.8s all;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
   input{
     display: block;
   }

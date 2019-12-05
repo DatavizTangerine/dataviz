@@ -2,10 +2,10 @@ import * as d3 from "d3";
 
 const menRadial = () => {
     var colors = {
-        'pink': '#FFAB33',
+        'orange': '#FFAB33',
     };
 
-    var color = colors.pink;
+    var color = colors.orange;
 
     var radius = 100;
     var border = 5;
@@ -69,7 +69,7 @@ const menRadial = () => {
         .attr('fill-opacity', 1);
 
     var numberText = meter.append('text')
-        .attr('fill', '#fff')
+        .attr('fill', color)
         .attr('text-anchor', 'middle')
         .attr('dy', '.35em');
 

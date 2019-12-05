@@ -1,11 +1,11 @@
-$main-font: 'Norms';
+$main-font: 'Intro';
 $main-font-light: 'Norms Light';
 $main-font-bold: 'Norms Bold';
 
 @font-face {
-  font-family: 'Norms';
-  src: url('../fonts/TTNorms-Regular.woff2') format('woff2'),
-  url('../fonts/TTNorms-Regular.woff') format('woff');
+  font-family: 'Intro';
+  src: url('../fonts/Intro-Regular.woff2') format('woff2'),
+  url('../fonts/Intro-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

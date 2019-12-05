@@ -2,6 +2,7 @@ const range = () => {
     const volumeSliderMale = document.querySelector('.range__men .condom');
     const volumeSliderWomen = document.querySelector('.range__women .condom');
     const pillsSlider = document.querySelector('.range .pill');
+    const deathsSlider = document.querySelector('.range .death');
     const pills = pillsSlider.querySelectorAll('svg g');
 
 
@@ -145,6 +146,7 @@ const range = () => {
 
 
     }
+
 
     new SliderCondom(volumeSliderMale, '.range__condom');
     new SliderCondom(volumeSliderWomen, '.range__condom');
