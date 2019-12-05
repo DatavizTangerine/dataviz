@@ -19,6 +19,9 @@ import histogramMen from './graph/street/histogramMen';
 import mapWomenChoice from './graph/pension/choice/mapWomenChoice';
 import mapMenChoice from './graph/pension/choice/mapMenChoice';
 import menDeath from './graph/death/men';
+import babyMen from './graph/baby/men';
+import babyWomen from './graph/baby/women';
+import menRadial from './graph/child/men/men';
 
 
 document.addEventListener("DOMContentLoaded", () =>{
@@ -47,4 +50,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     lineWomen();
     lineMen();
     menDeath();
+    babyMen();
+    babyWomen();
+    menRadial();
 });
