@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 
-const map = () => {
+const mapWomenChoice = () => {
     const width = 550, height = 550;
     let id = -1;
     let i = 0;
@@ -13,7 +13,7 @@ const map = () => {
 
     path.projection(projection);
 
-    const svg = d3.select('#map').append("svg")
+    const svg = d3.select('#mapWomenChoice').append("svg")
         .attr("id", "svg")
         .attr("width", width)
         .attr("height", height);
@@ -39,4 +39,4 @@ const map = () => {
     });
 }
 
-export default map;
+export default mapWomenChoice;

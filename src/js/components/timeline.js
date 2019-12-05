@@ -10,7 +10,7 @@ const timeline = () => {
     let parent = '.' + window.currentSex + '__questions .' + window.currentState + '__question ';
     let before = document.querySelector(parent + '.text__before');
     let after = document.querySelector(parent + '.text__after');
-
+    const percentBtn = document.querySelector('.percent');
     let percentSpan = document.querySelector('.percent .value');
 
     before.classList.remove('fadeOut');
@@ -57,8 +57,11 @@ const timeline = () => {
 
                 if (percent > 100) {
                     percent = 100;
+                    percentBtn.classList.add('show__conclusion');
                 }
                 percentSpan.innerHTML = percent + "%";
+
+
             }
             item.classList.add('clicked');
         })
